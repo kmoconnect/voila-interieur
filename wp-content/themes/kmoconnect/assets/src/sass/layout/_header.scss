@@ -1,0 +1,48 @@
+@use "../vendors/bootstrap";
+
+.header {
+  background-color: #fff;
+
+  &--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
+    background-color: transparent;
+  }
+
+  &--scroll {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
+    box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    .topbar {
+      display: none;
+    }
+  }
+
+  &__spacer {
+    height: var(--stw-navbar-height);
+  }
+}
+
+.admin-bar {
+  .header {
+    &--fixed {
+      top: var(--wp-admin--admin-bar--height);
+    }
+
+    &--scroll {
+      @include bootstrap.media-breakpoint-up(md) {
+        top: var(--wp-admin--admin-bar--height);
+      }
+    }
+  }
+}

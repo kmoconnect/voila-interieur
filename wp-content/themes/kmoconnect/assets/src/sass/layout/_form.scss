@@ -1,0 +1,61 @@
+@use '../vendors/bootstrap';
+@use "../components/buttons";
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="search"],
+input[type="url"],
+input[type="time"],
+input[type="number"]:not(.qty),
+textarea,
+select {
+  &:focus,
+  &:focus-visible {
+    border: 1px solid var(--stw-theme-primary-color);
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="time"],
+input[type="number"]:not(.qty),
+textarea {
+  @extend .form-control;
+}
+
+input[type="checkbox"],
+input[type="radio"]:not(.wc-block-components-radio-control__input) {
+  @extend .form-check-input;
+
+  &:checked {
+    background-color: var(--stw-theme-primary-color);
+  }
+}
+
+input[type="submit"],
+input[type="button"] {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+select {
+  @extend .form-select;
+}
+
+input::file-selector-button {
+  @extend .btn;
+  @extend .btn-primary;
+  padding: .5rem .75rem !important;
+  font-size: .95rem !important;
+  margin-right: 1rem;
+}

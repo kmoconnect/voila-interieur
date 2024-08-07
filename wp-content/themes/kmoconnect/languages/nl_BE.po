@@ -1,0 +1,423 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: KMO Connect\n"
+"POT-Creation-Date: 2024-05-25 16:15+0200\n"
+"PO-Revision-Date: 2024-05-25 16:17+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: app/Hooks/custom-post-types.php:18
+msgctxt "Post Type General Name"
+msgid "Services"
+msgstr "Aanbod"
+
+#: app/Hooks/custom-post-types.php:19
+msgctxt "Post Type Singular Name"
+msgid "Service"
+msgstr "Aanbod"
+
+#: app/Hooks/custom-post-types.php:20
+msgctxt "post type slug"
+msgid "services"
+msgstr "aanbod"
+
+#: app/Hooks/custom-post-types.php:64
+msgctxt "Post Type General Name"
+msgid "Realisations"
+msgstr "Realisaties"
+
+#: app/Hooks/custom-post-types.php:65
+msgctxt "Post Type Singular Name"
+msgid "Realisation"
+msgstr "Realisatie"
+
+#: app/Hooks/custom-post-types.php:66
+msgctxt "post type slug"
+msgid "realisations"
+msgstr "realisaties"
+
+#: app/Hooks/filters.php:162
+msgid "View realization"
+msgstr "Bekijk realisatie"
+
+#: app/Setup/base.php:160
+msgid "Next"
+msgstr "Volgende"
+
+#: app/Setup/base.php:166
+msgid "Previous"
+msgstr "Vorige"
+
+#: app/Woocommerce/Admin/product.php:13 app/Woocommerce/Frontend/product.php:79
+msgid "Description"
+msgstr "Omschrijving"
+
+#: app/Woocommerce/Admin/product.php:20
+msgid "Short description"
+msgstr "Korte omschrijving"
+
+#: app/Woocommerce/Frontend/checkout.php:61
+msgid "Pay"
+msgstr "Betalen"
+
+#: app/Woocommerce/Frontend/product.php:23
+msgid "Back to shop"
+msgstr "Terug naar shop"
+
+#: app/Woocommerce/Frontend/product.php:90
+msgid "Product details"
+msgstr "Product details"
+
+#: app/Woocommerce/Frontend/shop.php:50
+msgid "Order by:"
+msgstr "Sorteer op:"
+
+#: app/Woocommerce/base.php:187
+msgid "Popularity"
+msgstr "Populariteit"
+
+#: app/Woocommerce/base.php:188
+msgid "Latest"
+msgstr "Nieuwste"
+
+#: app/Woocommerce/base.php:189
+msgid "Price low - high"
+msgstr "Prijs laag - hoog"
+
+#: app/Woocommerce/base.php:190
+msgid "Price high - low"
+msgstr "Prijs hoog - laag"
+
+#: app/Woocommerce/base.php:191
+msgid "Average rating"
+msgstr "Gemiddelde beoordeling"
+
+#: app/Woocommerce/filters.php:53
+msgid "Thank you for your order!"
+msgstr "Bedankt voor uw bestelling!"
+
+#: app/Woocommerce/filters.php:84
+msgid "You might also like this..."
+msgstr "Dit vind je misschien ook leuk…"
+
+#: home.php:26
+msgid "There are currently no items"
+msgstr "Er zijn momenteel geen objecten"
+
+#: single.php:18
+#, php-format
+msgid "Back to %s"
+msgstr "Terug naar %s"
+
+#: single.php:20 template-parts/components/lay-out/back-link.php:4
+msgid "Back to overview"
+msgstr "Terug naar overzicht"
+
+#: template-parts/archive/default.php:25
+msgid "Discover more"
+msgstr "Ontdek meer"
+
+#: template-parts/woocommerce/my-account/registration-left.php:9
+msgid "Register"
+msgstr "Registreren"
+
+#: template-parts/woocommerce/my-account/registration-left.php:11
+msgid "Are you not yet known to us? Then create a new account first."
+msgstr "Ben je nog niet bekend bij ons? Maak dan eerst een nieuw account aan."
+
+#: template-parts/woocommerce/my-account/registration-left.php:12
+msgid "Create account"
+msgstr "Account aanmaken"
+
+#: woocommerce/loop/result-count.php:24
+#, php-format
+msgid "<span class=\"count\">%s</span> <span class=\"text\">product</span>"
+msgid_plural ""
+"<span class=\"count\">%s</span> <span class=\"text\">products</span>"
+msgstr[0] "<span class=“count”>%s</span> <span class=“text”>product</span>"
+msgstr[1] "<span class=“count”>%s</span> <span class=“text”>producten</span>"
+
+#. translators: 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:30
+#, php-format
+msgctxt "with first and last result"
+msgid "Showing %1$d&ndash;%2$d of %3$d result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] "Toon %1$d&ndash;%2$d van %3$d resultaten"
+msgstr[1] "Toont %1$d&ndash;%2$d van %3$d resultaten"
+
+#. Theme Name of the plugin/theme
+msgid "KMO Connect"
+msgstr "KMO Connect"
+
+#. Author of the plugin/theme
+msgid "Sander Rebry"
+msgstr "Sander Rebry"
+
+#. Author URI of the plugin/theme
+msgid "https://kmoconnect.be"
+msgstr "https://kmoconnect.be"
+
+#~ msgid "Read more"
+#~ msgstr "Lees meer"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Projects"
+#~ msgstr "Projecten"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Project"
+#~ msgstr "Project"
+
+#~ msgctxt "post type slug"
+#~ msgid "projects"
+#~ msgstr "projecten"
+
+#~ msgid "Brands"
+#~ msgstr "Merken"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Brands"
+#~ msgstr "Merken"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Brands"
+#~ msgstr "Merken"
+
+#~ msgctxt "post type slug"
+#~ msgid "categories"
+#~ msgstr "categories"
+
+#, php-format
+#~ msgid "All %s"
+#~ msgstr "Alle %s"
+
+#, php-format
+#~ msgid "New %s"
+#~ msgstr "Nieuw %s"
+
+#, php-format
+#~ msgid "Add New %s"
+#~ msgstr "Voeg nieuwe %s toe"
+
+#, php-format
+#~ msgid "Edit %s"
+#~ msgstr "Bewerk %s"
+
+#, php-format
+#~ msgid "View %s"
+#~ msgstr "Bekijk %s"
+
+#, php-format
+#~ msgid "Search %s"
+#~ msgstr "Zoek %s"
+
+#, php-format
+#~ msgid "No %s found"
+#~ msgstr "Geen %s gevonden"
+
+#, php-format
+#~ msgid "No %s found in Trash"
+#~ msgstr "Geen %s gevonden in de prullenbak"
+
+#, php-format
+#~ msgid "Parent %s:"
+#~ msgstr "Hoofd %s:"
+
+#, php-format
+#~ msgctxt "archive options page"
+#~ msgid "%s page"
+#~ msgstr "%s pagina"
+
+#, php-format
+#~ msgid "New %s name"
+#~ msgstr "Nieuwe %s naam"
+
+#, php-format
+#~ msgid "Separate %s with commas"
+#~ msgstr "Afzonderlijke %s met komma"
+
+#, php-format
+#~ msgid "Add or remove %s"
+#~ msgstr "Voeg nieuw %s toe"
+
+#, php-format
+#~ msgid "Choose from the most used %s"
+#~ msgstr "Kies uit de meest gebruikte  %s"
+
+#~ msgid "Studiowebvision"
+#~ msgstr "Studiowebvision"
+
+#~ msgid "Studio Webvision"
+#~ msgstr "Studio Webvision"
+
+#~ msgid "https://studiowebvision.be"
+#~ msgstr "https://studiowebvision.be"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Curtains"
+#~ msgstr "Gordijnen"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Curtain"
+#~ msgstr "Gordijn"
+
+#~ msgctxt "post type slug"
+#~ msgid "curtains"
+#~ msgstr "gordijnen"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Category"
+#~ msgstr "Categorie"
+
+#~ msgctxt "taxonomy type slug"
+#~ msgid "category"
+#~ msgstr "categorie"
+
+#~ msgctxt "taxonomy type slug"
+#~ msgid "category_realisations"
+#~ msgstr "categorie_realisaties"
+
+#~ msgid "Make an appointment"
+#~ msgstr "Afspraak maken"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Systems"
+#~ msgstr "Systemen"
+
+#~ msgid "Would you like more information?"
+#~ msgstr "Wenst u meer informatie?"
+
+#~ msgid "contact us"
+#~ msgstr "contacteer ons"
+
+#, php-format
+#~ msgid "Questions about %s?"
+#~ msgstr "Vragen over %s?"
+
+#~ msgid "Make appointment"
+#~ msgstr "Maak een afspraak"
+
+#~ msgid "Showroom"
+#~ msgstr "Showroom"
+
+#~ msgid "Openinghours"
+#~ msgstr "Openingsuren"
+
+#~ msgid "read more"
+#~ msgstr "lees meer"
+
+#~ msgid "Search in categories"
+#~ msgstr "Zoek in categorieën"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle Categorieën"
+
+#~ msgid "View category"
+#~ msgstr "Bekijk categorie"
+
+#~ msgid "Parent Category"
+#~ msgstr "Hoofdcategorie"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Hoofdcategorie:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Categorie bewerken"
+
+#~ msgid "Update Category"
+#~ msgstr "Categorie bijwerken"
+
+#~ msgid "New category"
+#~ msgstr "Nieuwe categorie"
+
+#~ msgid "New category name"
+#~ msgstr "Nieuwe categorienaam"
+
+#~ msgid "No categories found"
+#~ msgstr "Geen categorieën gevonden"
+
+#~ msgid "Category"
+#~ msgstr "Categorie"
+
+#~ msgctxt "post type slug"
+#~ msgid "category"
+#~ msgstr "categorie"
+
+#~ msgid "Projects"
+#~ msgstr "Projecten"
+
+#~ msgid "Projects attributes"
+#~ msgstr "Project eigenschappen"
+
+#~ msgid "Parent item"
+#~ msgstr "Hoofd project"
+
+#~ msgid "All Projects"
+#~ msgstr "Alle projecten"
+
+#~ msgid "Add Project"
+#~ msgstr "Project toevoegen"
+
+#~ msgid "Add new Project"
+#~ msgstr "Nieuw project"
+
+#~ msgid "View Project"
+#~ msgstr "Bekijk project"
+
+#~ msgid "Edit Project"
+#~ msgstr "Bewerk project"
+
+#~ msgid "View Projects"
+#~ msgstr "Bekijk projecten"
+
+#~ msgid "Search Project"
+#~ msgstr "Zoek project"
+
+#~ msgid "Not found"
+#~ msgstr "Niet gevonden"
+
+#~ msgid "Not found in trash"
+#~ msgstr "Niet gevonden in prullenbak"
+
+#~ msgid "Featured Image"
+#~ msgstr "Hoofdafbeelding"
+
+#~ msgid "Set featured image"
+#~ msgstr "Stel hoofdafbeelding in"
+
+#~ msgid "Remove featured image"
+#~ msgstr "Verwijder hoofdafbeelding"
+
+#~ msgid "Use as featured image"
+#~ msgstr "Gebruik als hoofdafbeelding"
+
+#~ msgid "Insert into item"
+#~ msgstr "Voeg toe aan project"
+
+#~ msgid "Uploaded to this item"
+#~ msgstr "Geüpload naar dit project"
+
+#~ msgid "Projects list"
+#~ msgstr "Projecten"
+
+#~ msgid "Filter Project"
+#~ msgstr "Filter project"

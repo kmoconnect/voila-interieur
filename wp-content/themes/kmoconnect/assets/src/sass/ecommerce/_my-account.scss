@@ -1,0 +1,382 @@
+@use "../abstracts" as *;
+@use "../vendors/fontawesome" as *;
+@use "../vendors/bootstrap";
+
+.woocommerce-page.woocommerce-account {
+  --sidebar-border: #e8e8e8;
+  --sidebar-link: var(--stw-theme-text-color);
+  --sidebar-link-active: var(--stw-theme-primary-color);
+  --sidebar-link-hover: var(--stw-theme-primary-color);
+
+  mark {
+    background-color: transparent;
+    padding: 0;
+    color: var(--stw-theme-primary-color);
+  }
+
+  .woocommerce {
+    .lost_reset_password {
+      max-width: toRem(750);
+    }
+
+    .woocommerce-form {
+      width: 75%;
+
+      &__input {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .woocommerce-form-login {
+      &__rememberme {
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.875rem;
+        }
+      }
+
+      .lost_password {
+        font-size: .875rem;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      row-gap: 3rem;
+      column-gap: 3rem;
+
+      @include bootstrap.media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
+
+      table {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        thead {
+          @include bootstrap.media-breakpoint-down(lg) {
+            display: none;
+          }
+        }
+
+        td,
+        th {
+          padding: 0.5rem;
+        }
+
+        tbody {
+          tr {
+            border-bottom: 1px solid var(--sidebar-border);
+
+            @include bootstrap.media-breakpoint-down(lg) {
+              display: block;
+              margin-bottom: 1rem;
+            }
+
+            &:nth-child(even) {
+              background-color: rgb(249 250 251 / 1);
+            }
+          }
+
+          td {
+            @include bootstrap.media-breakpoint-down(lg) {
+              display: block;
+              border-bottom: 1px solid #d2d6dc;
+              text-align: right;
+
+              &::before {
+                content: attr(data-title) ": ";
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+        }
+
+      }
+
+      .woocommerce {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-notices-wrapper {
+          flex: 1;
+        }
+
+        h2 {
+          width: 100%;
+          margin-bottom: 1rem;
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          margin-bottom: 1rem;
+        }
+
+        .lost_reset_password {
+          padding-top: 3rem;
+
+          .form-row-first {
+            float: none;
+          }
+        }
+
+        label {
+          padding-bottom: 0.5rem;
+        }
+
+        .lost_password {
+          margin-top: 1rem;
+          font-size: 0.875rem;
+        }
+
+        .u-columns.col2-set {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          width: 100%;
+
+          .col-1,
+          .col-2 {
+            flex: 1;
+          }
+        }
+
+        &-Addresses {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 3rem;
+          flex-direction: column;
+
+          @include bootstrap.media-breakpoint-up(lg) {
+            flex-direction: row;
+          }
+        }
+
+        &-Address {
+          flex: 1;
+          width: 100%;
+
+          &-title {
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--sidebar-border);
+            padding: .75rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+              font-size: 1.2rem;
+              font-weight: 400;
+              margin-bottom: 0;
+            }
+          }
+
+          address {
+            margin: 0;
+            border: 1px solid var(--sidebar-border);
+            border-top: 0;
+            padding: 1rem;
+          }
+        }
+
+        &-MyAccount {
+          &-navigation {
+            border-right: 1px solid var(--sidebar-border);
+
+            @include bootstrap.media-breakpoint-up(lg) {
+              width: 22%;
+            }
+
+            ul {
+              @include reset-list();
+            }
+
+            &-link {
+              position: relative;
+              padding: 0;
+              border-bottom: 1px solid var(--sidebar-border);
+
+              &::after {
+                content: "";
+                position: absolute;
+                top: 1px;
+                z-index: 9;
+                right: -1px;
+                background-color: var(--stw-theme-primary-color);
+                transition: all .3s;
+                opacity: 0;
+                height: 100%;
+                width: 3px;
+              }
+
+              &:hover::after {
+                opacity: 1;
+              }
+
+              a {
+                display: block;
+                font-weight: 400;
+                padding: 1rem;
+                color: var(--sidebar-link);
+
+                &::before {
+                  margin-right: .75rem;
+                }
+
+                &:hover {
+                  color: var(--sidebar-link-hover);
+                  text-decoration: none;
+
+                  &::after {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              &.is-active {
+
+                &::after {
+                  opacity: 1;
+                }
+
+                a {
+                  color: var(--sidebar-link-active);
+                  text-decoration: none;
+                }
+              }
+
+              &--dashboard {
+                a {
+                  &:before {
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-pager);
+                  }
+                }
+              }
+
+              &--orders {
+                a {
+                  &:before {
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-cart-arrow-down);
+                  }
+                }
+              }
+
+              &--downloads {
+                a {
+                  &:before {
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-download);
+                  }
+                }
+              }
+
+              &--edit-address {
+                a {
+                  &:before {
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-address-book);
+                  }
+                }
+              }
+
+              &--edit-account {
+                a {
+                  &:before {
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-user-alt);
+                  }
+                }
+              }
+
+              &--customer-logout {
+                a {
+                  &:before {
+                    @extend %fa-icon;
+                    @extend .fas;
+                    content: fa-content($fa-var-arrow-right-from-bracket);
+                  }
+                }
+              }
+
+            }
+          }
+
+          &-content {
+            flex: 1;
+
+            p {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    &-login__wrapper {
+      h2,
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+
+      .u-columns {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 6rem;
+
+        .u-column1,
+        .u-column2 {
+          flex: 1;
+        }
+
+        .u-column2 {
+          display: none;
+        }
+      }
+
+      &--flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        column-gap: 6rem;
+        row-gap: 2rem;
+
+        @include bootstrap.media-breakpoint-up(lg) {
+          flex-direction: row;
+        }
+      }
+
+      .woocommerce {
+        &-registration {
+          flex: 1;
+        }
+
+        &-login__form {
+          flex: 1;
+        }
+      }
+    }
+
+    &-form-login__submit {
+      min-width: toRem(200);
+    }
+  }
+}

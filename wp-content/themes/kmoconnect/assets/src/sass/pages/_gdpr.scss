@@ -1,0 +1,15 @@
+.gdpr {
+  .lead {
+    padding-bottom: 0;
+  }
+
+  .layout {
+    &__block {
+      padding-bottom: 2rem;
+
+      &:last-child {
+        padding-bottom: 6rem;
+      }
+    }
+  }
+}

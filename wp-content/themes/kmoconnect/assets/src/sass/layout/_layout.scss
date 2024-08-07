@@ -1,0 +1,22 @@
+@use "../abstracts/functions" as *;
+@use "../vendors/bootstrap";
+
+.stw-layouts {
+  //.layout {
+  //}
+
+  &.single,
+  &.post-type-archive {
+    .layout {
+      &:not(.layout--second) {
+        .layout {
+          &__block {
+            &:first-child {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

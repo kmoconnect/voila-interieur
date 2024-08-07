@@ -1,0 +1,171 @@
+@use '../vendors/bootstrap';
+
+@mixin reset-list() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin box-shadow() {
+  box-shadow: 0px 0px 5px -14px rgb(0 0 0 / 3%),
+  0px 0px 11.9px -14px rgb(0 0 0 / 4%),
+  0px 0px 22.4px -14px rgb(0 0 0 / 5%),
+  0px 0px 40px -14px rgb(0 0 0 / 6%),
+  0px 0px 74.8px -14px rgb(0 0 0 / 7%),
+  0px 0px 179px -14px rgb(0 0 0 / 10%);
+}
+
+@mixin box-shadow-1() {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+@mixin line-title($center: false) {
+  &::before,
+  &::after {
+    content: "";
+    background: $primary none repeat scroll 0 0;
+    bottom: -20px;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    @if $center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &::before {
+    @if $center {
+      margin-left: -30px;
+    }
+    width: 5px;
+  }
+
+  &::after {
+    width: 40px;
+    margin-left: 10px;
+    @if $center {
+      margin-left: 0;
+    }
+  }
+
+}
+
+@mixin custom-container($padding-x: bootstrap.$container-padding-x) {
+  width: 100%;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
+
+  @include bootstrap.media-breakpoint-down(xxl) {
+    max-width: 1140px;
+  }
+
+  @include bootstrap.media-breakpoint-down(xl) {
+    max-width: 960px;
+  }
+
+  @include bootstrap.media-breakpoint-down(lg) {
+    max-width: 720px;
+  }
+
+  @include bootstrap.media-breakpoint-down(md) {
+    max-width: 540px;
+  }
+}
+
+//
+//@mixin calc-margin-container($direction){
+//  @if($direction == left){
+//    margin-left: calc((100vw - map-get(bootstrap.$container-max-widths, xxl)) / 2);
+//
+//    @include bootstrap.media-breakpoint-down(xxl){
+//      margin-left: calc((100vw - map-get(bootstrap.$container-max-widths, xl)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(xl){
+//      margin-left: calc((100vw - map-get(bootstrap.$container-max-widths, lg)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(lg){
+//      margin-left: calc((100vw - map-get(bootstrap.$container-max-widths, md)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(md){
+//      margin-left: calc((100vw - map-get(bootstrap.$container-max-widths, sm)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(sm){
+//      margin-left: 0;
+//    }
+//
+//  }
+//
+//  @if($direction == right){
+//    margin-right: calc((100vw - map-get(bootstrap.$container-max-widths, xxl)) / 2);
+//
+//    @include bootstrap.media-breakpoint-down(xxl){
+//      margin-right: calc((100vw - map-get(bootstrap.$container-max-widths, xl)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(xl){
+//      margin-right: calc((100vw - map-get(bootstrap.$container-max-widths, lg)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(lg){
+//      margin-right: calc((100vw - map-get(bootstrap.$container-max-widths, md)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(md){
+//      margin-right: calc((100vw - map-get(bootstrap.$container-max-widths, sm)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(sm){
+//      margin-right: 0;
+//    }
+//
+//  }
+//}
+//
+//@mixin calc-padding-container($direction){
+//  @if($direction == left){
+//    padding-left: calc((100vw - map-get(bootstrap.$container-max-widths, xxl)) / 2);
+//
+//    @include bootstrap.media-breakpoint-down(xxl){
+//      padding-left: calc((100vw - map-get(bootstrap.$container-max-widths, xl)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(xl){
+//      padding-left: calc((100vw - map-get(bootstrap.$container-max-widths, lg)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(lg){
+//      padding-left: calc((100vw - map-get(bootstrap.$container-max-widths, md)) / 2);
+//    }
+//
+//  }
+//
+//  @if($direction == right){
+//    padding-right: calc((100vw - map-get(bootstrap.$container-max-widths, xxl)) / 2);
+//
+//    @include bootstrap.media-breakpoint-down(xxl){
+//      padding-right: calc((100vw - map-get(bootstrap.$container-max-widths, xl)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(xl){
+//      padding-right: calc((100vw - map-get(bootstrap.$container-max-widths, lg)) / 2);
+//    }
+//
+//    @include bootstrap.media-breakpoint-down(lg){
+//      padding-right: calc((100vw - map-get(bootstrap.$container-max-widths, md)) / 2);
+//    }
+//
+//  }
+//}

@@ -1,0 +1,141 @@
+@use "../fonts/typography" as *;
+@use "../components/buttons" as *;
+@use "../vendors/bootstrap";
+
+:root {
+  --stw-theme-font-base: 'Open Sans', sans-serif;
+  --stw-theme-font-heading: 'Open Sans', sans-serif;
+  --stw-navbar-height: 96px;
+  --webvision-bg-topbanner: var(--stw-theme-secondary-color);
+
+  // bootstrap
+  --bs-primary: var(--stw-theme-primary-color);
+  --bs-secondary: var(--stw-theme-secondary-color);
+  --bs-secondary-rgb: var(--stw-theme-secondary-color-comma-rgb);
+  --bs-primary-rgb: var(--stw-theme-primary-color-comma-rgb);
+  --bs-link-color: var(--stw-theme-primary-color);
+  --bs-link-hover-color: var(--stw-theme-secondary-color);
+  --bs-body-color: rgb(0 0 0);
+  --bs-primary-border-subtle: var(--stw-theme-primary-color);
+
+  // font sizes
+  --font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
+  --font-size-base: 1rem;
+  --font-size-md: clamp(1rem, 2vw + 1rem, 1.44rem);
+  --font-size-lg: clamp(1.125rem, 2vw + 1rem, 1.728rem);
+  --font-size-xl: clamp(1.5rem, 2vw + 1rem, 2.074rem);
+  --font-size-xxl: clamp(1.813rem, 2vw + 1rem, 2.438rem);
+  --font-size-xxxl: clamp(2.188rem, 2vw + 1rem, 3rem);
+
+  // swiper
+  --swiper-theme-color: var(--stw-theme-primary-color);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--stw-theme-font-base);
+  scroll-behavior: smooth;
+  color: var(--stw-theme-text-color, #000);
+  font-size: var(--font-size-base);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--stw-theme-primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--stw-theme-secondary-color);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+em {
+  font-style: normal;
+  color: var(--stw-theme-primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--stw-theme-font-heading);
+  margin-bottom: 1rem;
+  color: var(--stw-theme-heading-color);
+}
+
+h1,
+.h1 {
+  font-size: var(--font-size-xxxl);
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size-lg);
+}
+
+h5,
+.h5 {
+  font-size: var(--font-size-md);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+[data-src] {
+  cursor: pointer;
+}
+
+.grecaptcha-badge {
+  transform: scale(0.85);
+  transform-origin: 0 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body.gdpr {
+  --stw-layout-blocks-padding: 3rem;
+
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.6rem;
+  }
+}

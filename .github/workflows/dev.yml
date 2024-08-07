@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - dev
+name: Deploy website to dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        uses: "php-actions/composer@v6"
+        env:
+          COMPOSER: "composer.json"
+        with:
+          php_version: "8.1"
+          args: "--ignore-platform-reqs --optimize-autoloader"
+          working_dir: "wp-content/themes/kmoconnect"
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_DEV_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i"
+          SOURCE: "wp-content/"
+          REMOTE_HOST: ${{ secrets.DEV_REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.DEV_REMOTE_USER }}
+          TARGET: ${{ secrets.DEV_REMOTE_TARGET }}
+          EXCLUDE: "/wp-content/themes/**/node_modules/, .git, .github"

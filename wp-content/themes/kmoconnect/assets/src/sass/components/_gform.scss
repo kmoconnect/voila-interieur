@@ -1,0 +1,61 @@
+@use "../base/base" as *;
+@use "buttons";
+
+.stw-layouts .gform_wrapper.gravity-theme {
+
+  .gform {
+    &_required_legend {
+      display: none;
+    }
+
+    &_title {
+      @extend h3;
+    }
+
+    &_body {
+      .gsection {
+        border-bottom: 2px solid var(--stw-theme-primary-color);
+
+        &_title {
+          @extend h5;
+          text-transform: initial;
+          margin-bottom: .25rem;
+        }
+      }
+    }
+
+    &_button {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+
+    .gform_previous_button.button,
+    .gform_save_link.button {
+      @extend .btn;
+      @extend .btn-secondary;
+    }
+
+    &_fields {
+      .gfield {
+        &_label {
+          font-weight: 500;
+        }
+
+        .ginput_container_fileupload {
+          .gform_button_select_files {
+            @extend .btn;
+            @extend .btn-primary;
+            padding: .5rem .75rem !important;
+            font-size: .95rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .gf_progressbar_wrapper .gf_progressbar {
+    &_percentage {
+      background-color: var(--stw-theme-primary-color);
+    }
+  }
+}

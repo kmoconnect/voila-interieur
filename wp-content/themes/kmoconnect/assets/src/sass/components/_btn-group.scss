@@ -1,0 +1,13 @@
+.btn-group {
+  display: block;
+
+  &__wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &--center &__wrapper {
+    justify-content: center;
+  }
+}

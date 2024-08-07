@@ -1,0 +1,28 @@
+.woocommerce-page.woocommerce-cart {
+  .cart-coupon {
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    &__input {
+      height: 2.5rem;
+      width: 100%;
+      font-size: .9375rem;
+      padding: .625rem 1rem;
+      transition: border 250ms ease-in-out;
+      padding-right: 7rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__btn {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      padding: 6px 1rem;
+      font-size: .9375rem;
+      height: 2rem;
+      line-height: 1;
+    }
+  }
+}

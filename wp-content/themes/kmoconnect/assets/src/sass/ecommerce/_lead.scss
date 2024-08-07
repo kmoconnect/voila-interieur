@@ -1,0 +1,9 @@
+.stw-layouts.woocommerce-page,
+.stw-layouts.woocommerce, {
+  .lead {
+    &__title {
+      margin-bottom: 0;
+      font-size: var(--font-size-xl);
+    }
+  }
+}

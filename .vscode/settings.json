@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "phpsab.executablePathCS": "/Users/sanderrebry/.composer/vendor/bin/phpcs",
+  "phpsab.executablePathCBF": "/Users/sanderrebry/.composer/vendor/bin/phpcbf",
+  "phpsab.standard": "WordPress",
+  "phpsab.fixerEnable": true
+}

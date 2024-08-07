@@ -1,0 +1,110 @@
+@use "../vendors/bootstrap";
+
+.footer {
+  padding-top: 4rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  p:empty {
+    margin: 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 2rem;
+    font-size: .97rem;
+
+    @include bootstrap.media-breakpoint-up(md) {
+      grid-auto-flow: column;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1.25rem;
+    }
+
+    a {
+      font-weight: 500;
+      padding-bottom: 0.35rem;
+      display: block;
+    }
+  }
+
+  &__col-first {
+
+  }
+
+  &__inner_col {
+
+  }
+
+  &__widget {
+    &-1 {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .stw-social-media {
+    &__icon {
+      font-size: 1.5rem;
+    }
+  }
+
+  .stw-address,
+  .stw-phone,
+  .stw-vat {
+    margin-bottom: .5rem;
+  }
+
+  &__bottom {
+    padding: 1.5rem 0;
+    font-size: .875rem;
+
+    a {
+      font-weight: 500;
+    }
+
+    .widget_nav_menu,
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .legal-nav {
+      display: flex;
+      column-gap: .5rem;
+      flex-wrap: wrap;
+
+      .menu-item {
+        a {
+          position: relative;
+          display: flex;
+        }
+
+        &:not(:last-child) {
+          a {
+            &::after {
+              content: "|";
+              padding-left: 0.5em;
+              margin-right: -0.2em;
+            }
+          }
+        }
+      }
+    }
+    
+    .copyright-nav {
+      display: flex;
+      column-gap: .5rem;
+    }
+  }
+}

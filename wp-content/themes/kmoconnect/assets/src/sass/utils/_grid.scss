@@ -1,0 +1,217 @@
+@use "../vendors/bootstrap";
+
+.grid {
+  display: grid;
+
+  @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+    &-#{$breakpoint} {
+      @include bootstrap.media-breakpoint-up($breakpoint) {
+        display: grid;
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+    &-cols-#{$i} {
+      grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+    }
+  }
+
+  @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+    @for $i from 1 through 12 {
+      &-cols-#{$breakpoint}-#{$i} {
+        @include bootstrap.media-breakpoint-up($breakpoint) {
+          grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+        }
+      }
+    }
+  }
+
+  &-cols-none {
+    grid-template-columns: none;
+  }
+
+  .col {
+    &-auto {
+      grid-column: auto;
+    }
+
+    @for $i from 1 through 12 {
+      &-span-#{$i} {
+        grid-column: span #{$i} / span #{$i};
+      }
+    }
+
+    @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+      @for $i from 1 through 12 {
+        &-span-#{$breakpoint}-#{$i} {
+          @include bootstrap.media-breakpoint-up($breakpoint) {
+            grid-column: span #{$i} / span #{$i};
+          }
+        }
+      }
+    }
+
+    &-span-full {
+      grid-column: 1 / -1;
+    }
+
+    @for $i from 1 through 12 {
+      &-start-#{$i} {
+        grid-column-start: #{$i};
+      }
+    }
+
+    @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+      @for $i from 1 through 12 {
+        &-start-#{$breakpoint}-#{$i} {
+          @include bootstrap.media-breakpoint-up($breakpoint) {
+            grid-column-start: #{$i};
+          }
+        }
+      }
+    }
+
+    &--start-auto {
+      grid-column-start: auto;
+    }
+
+    @for $i from 1 through 12 {
+      &-end-#{$i} {
+        grid-column-end: #{$i};
+      }
+    }
+
+    @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+      @for $i from 1 through 12 {
+        &-end-#{$breakpoint}-#{$i} {
+          @include bootstrap.media-breakpoint-up($breakpoint) {
+            grid-column-end: #{$i};
+          }
+        }
+      }
+    }
+
+    &-end-auto {
+      grid-column-end: auto;
+    }
+
+  }
+
+  @for $i from 1 through 12 {
+    &-rows-#{$i} {
+      grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
+    }
+  }
+
+  @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+    @for $i from 1 through 12 {
+      &-rows-#{$breakpoint}-#{$i} {
+        @include bootstrap.media-breakpoint-up($breakpoint) {
+          grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
+        }
+      }
+    }
+  }
+
+  &-rows-none {
+    grid-template-rows: none;
+  }
+
+  .row {
+    grid-row: auto;
+
+    @for $i from 1 through 6 {
+      &-span-#{$i} {
+        grid-row: span #{$i} / span #{$i};
+      }
+    }
+
+    @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+      @for $i from 1 through 6 {
+        &-span-#{$breakpoint}-#{$i} {
+          @include bootstrap.media-breakpoint-up($breakpoint) {
+            grid-row: span #{$i} / span #{$i};
+          }
+        }
+      }
+    }
+
+    &-span-full {
+      grid-row: 1 / -1;
+    }
+
+    @for $i from 1 through 6 {
+      &-start-#{$i} {
+        grid-row: span #{$i} / span #{$i};
+      }
+    }
+
+    @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+      @for $i from 1 through 6 {
+        &-start-#{$breakpoint}-#{$i} {
+          @include bootstrap.media-breakpoint-up($breakpoint) {
+            grid-row: span #{$i} / span #{$i};
+          }
+        }
+      }
+    }
+
+    &-start-auto {
+      grid-row-start: auto;
+    }
+
+    @for $i from 1 through 6 {
+      &-end-#{$i} {
+        grid-row-end: #{$i};
+      }
+    }
+
+    @each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+      @for $i from 1 through 6 {
+        &-end-#{$breakpoint}-#{$i} {
+          @include bootstrap.media-breakpoint-up($breakpoint) {
+            grid-row-end: #{$i};
+          }
+        }
+      }
+    }
+
+    &-end-auto {
+      grid-row-end: auto;
+    }
+  }
+
+}
+
+@for $i from 1 through 24 {
+  .gap-x-#{$i} {
+    column-gap: #{$i}rem;
+  }
+}
+
+@each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+  @for $i from 1 through 24 {
+    gap-x-#{$breakpoint}-#{$i} {
+      @include bootstrap.media-breakpoint-up($breakpoint) {
+        column-gap: #{$i}rem;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 24 {
+  .gap-y-#{$i} {
+    row-gap: #{$i}rem;
+  }
+}
+
+@each $breakpoint in map-keys(bootstrap.$grid-breakpoints) {
+  @for $i from 1 through 24 {
+    gap-y-#{$breakpoint}-#{$i} {
+      @include bootstrap.media-breakpoint-up($breakpoint) {
+        row-gap: #{$i}rem;
+      }
+    }
+  }
+}

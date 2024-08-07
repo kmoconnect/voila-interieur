@@ -1,0 +1,36 @@
+.woocommerce {
+  .stock {
+    position: relative;
+    padding-left: 1rem;
+    font-size: .875rem;
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      width: .75em;
+      height: .75em;
+      position: absolute;
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.out-of-stock {
+      color: #dc2626;
+
+      &::before {
+        background: #dc2626;
+      }
+    }
+
+    &.in-stock {
+      color: #16a34a;
+
+      &::before {
+        background: #16a34a;
+      }
+    }
+
+  }
+}

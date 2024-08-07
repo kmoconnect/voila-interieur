@@ -1,0 +1,154 @@
+@use 'sass:math';
+@use "../vendors/bootstrap";
+
+$step: 0.25rem;
+$max-width-values: ();
+$step2: .5rem;
+
+@for $i2 from 6 through 150 {
+  $max-w: $i2 * $step2;
+  $max-width-values: append($max-width-values, $max-w);
+}
+
+@each $max-w in $max-width-values {
+  .max-w-#{calc($max-w / $step)} {
+    max-width: $max-w;
+  }
+
+  .max-h-#{calc($max-w / $step)} {
+    max-height: $max-w;
+  }
+}
+
+.text-primary {
+  em {
+    color: var(--stw-theme-heading-color);
+  }
+}
+
+// aspect ratios
+.aspect-1x1 {
+  aspect-ratio: 1/1;
+}
+
+.aspect-3x2 {
+  aspect-ratio: 3/2;
+}
+
+.aspect-4x3 {
+  aspect-ratio: 4/3;
+}
+
+.aspect-16x9 {
+  aspect-ratio: 16/9;
+}
+
+// Important spacing classes
+.\!pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.\!pt-0 {
+  padding-top: 0 !important;
+}
+
+.\!ps-0 {
+  padding-left: 0 !important;
+}
+
+.\!pe-0 {
+  padding-right: 0 !important;
+}
+
+.\!py-0 {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.\!px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.\!p-0 {
+  padding: 0 !important;
+}
+
+.pb-layout {
+  padding-bottom: var(--stw-layout-blocks-padding);
+}
+
+.pt-layout {
+  padding-top: var(--stw-layout-blocks-padding);
+}
+
+// margins
+.\!mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.\!mt-0 {
+  margin-top: 0 !important;
+}
+
+.\!ms-0 {
+  margin-left: 0 !important;
+}
+
+.\!me-0 {
+  margin-right: 0 !important;
+}
+
+.\!my-0 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.\!mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.\!h-100 {
+  height: 100% !important;
+}
+
+.\!w-100 {
+  width: 100% !important;
+}
+
+.\!rounded-0 {
+  border-radius: 0 !important;
+}
+
+[data-overlay="custom"]:before {
+  background-image: linear-gradient(to right, #000 48.62%, transparent 78.13%), linear-gradient(179.6deg, #fff 8.16%, hsla(0, 0%, 100%, .69) 39.52%);
+}
+
+.text-initial {
+  text-transform: initial;
+}
+
+.link-white {
+  a {
+    color: #fff;
+  }
+}
+
+.bg-broken-white {
+  background-color: #fafafa;
+}
+
+.paragraph-0 {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-lead {
+  font-size: 1.2rem;
+}

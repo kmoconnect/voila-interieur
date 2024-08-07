@@ -1,0 +1,14 @@
+.topbar {
+  background-color: var(--stw-theme-primary-color);
+  color: var(--stw-theme-secondary-color);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__right {
+    margin-left: auto;
+  }
+}

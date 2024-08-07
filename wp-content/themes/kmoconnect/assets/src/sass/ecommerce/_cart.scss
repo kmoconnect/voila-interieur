@@ -1,0 +1,288 @@
+@use "../abstracts/mixins" as *;
+@use "../components/buttons";
+@use "../vendors/bootstrap";
+
+.woocommerce-page.woocommerce-cart {
+  .woocommerce {
+    --flex-gap: 2rem;
+
+    .woocommerce-cart {
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: var(--flex-gap);
+        flex-direction: column;
+
+        @include bootstrap.media-breakpoint-up(xl) {
+          flex-direction: row;
+        }
+      }
+
+      &-form {
+        @include bootstrap.media-breakpoint-up(xl) {
+          flex: calc(66.666667% - var(--flex-gap, 0px) * 0.66667);
+        }
+
+        &__contents,
+        .shop_table {
+          position: relative;
+          width: 100%;
+          border: 1px solid var(--cart-table-border);
+
+          thead {
+            background-color: var(--cart-table-head-bg);
+
+            @include bootstrap.media-breakpoint-down(xl) {
+              display: none;
+            }
+
+            tr {
+              th {
+                padding: 0.75rem 1rem;
+                text-align: left;
+                font-weight: 600;
+              }
+            }
+          }
+
+          tbody,
+          &__cart_item {
+            tr {
+              position: relative;
+              border-bottom: 1px solid var(--cart-table-border);
+
+              @include bootstrap.media-breakpoint-down(xl) {
+                display: block;
+              }
+
+              td {
+                padding: 1rem;
+
+                .cart-item__name a {
+                  display: inline-block;
+                }
+
+                &:not(.product-thumbnail, .actions) {
+                  @include bootstrap.media-breakpoint-down(xl) {
+                    display: block;
+                    text-align: right;
+
+                    &::before {
+                      content: attr(data-title) ": ";
+                      font-weight: 700;
+                      float: left;
+                    }
+
+                    .quantity {
+                      justify-content: flex-end;
+                    }
+                  }
+                }
+              }
+
+              .product {
+                &-thumbnail {
+
+                  img {
+                    max-width: 4.375rem;
+                    width: auto;
+                  }
+
+                  a {
+                    display: block;
+                  }
+                }
+              }
+
+              .variation {
+                display: flex;
+                font-size: .875rem;
+                column-gap: .25rem;
+                margin-bottom: 0;
+
+                p {
+                  margin-bottom: 0;
+                }
+
+                dt,
+                dd {
+                  font-weight: 400;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .product-remove {
+            border: none;
+            padding: 1.25rem;
+
+            &::before {
+              display: none;
+            }
+
+            @include bootstrap.media-breakpoint-up(xl) {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+
+          }
+
+          .remove {
+            font-size: 1.25rem;
+            text-decoration: none;
+          }
+
+          .actions {
+            display: none;
+            text-align: right;
+
+            .coupon {
+              display: flex;
+              align-items: center;
+              gap: .75rem;
+              float: left;
+
+              button[name="apply_coupon"] {
+                padding-block: .65rem !important;
+              }
+            }
+
+            button[name="update_cart"] {
+              display: none;
+            }
+
+            .input-text {
+              @extend .form-control;
+              display: inline-block;
+              width: auto;
+            }
+
+            .button {
+              @extend .btn;
+              @extend .btn-primary;
+            }
+          }
+        }
+      }
+    }
+
+    .cart-collaterals {
+      flex-basis: 100%;
+      @include bootstrap.media-breakpoint-up(xl) {
+        flex-basis: calc(33.333333% - var(--flex-gap));
+      }
+
+      .cart_totals {
+        width: 100%;
+        border: 1px solid var(--cart-table-border);
+        padding: 0 1.25rem; // Convert to rem
+
+        > h2 {
+          margin: 0 -20px 20px;
+          background-color: var(--cart-table-head-bg);
+          padding: 0.75rem 1rem;
+          font-size: 1rem;
+          line-height: var(--bs-body-line-height);
+        }
+
+        table,
+        .shop_table {
+          width: 100%;
+
+          tr {
+            border-bottom: 1px solid var(--cart-table-border);
+
+            td,
+            th {
+              padding: 0.75rem 1rem;
+              text-align: left;
+              font-weight: normal;
+            }
+
+            &.order-total {
+              //th {
+              //  display: none;
+              //}
+
+              td {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .wc-proceed-to-checkout {
+          padding: 1.25rem 0;
+
+          .checkout-button {
+            @extend .btn;
+            @extend .btn-primary;
+            --bs-btn-padding-x: 1.5rem;
+            --bs-btn-padding-y: .65rem;
+            --bs-btn-hover-bg: var(--stw-theme-text-color);
+            --bs-btn-hover-border-color: var(--stw-theme-text-color);
+            --bs-btn-hover-color: #fff;
+            width: 100%;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            transition: all ease-in-out 250ms;
+            text-transform: initial;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    &-shipping-totals {
+      th:first-child {
+        vertical-align: baseline;
+      }
+
+      .woocommerce-shipping-destination {
+        font-weight: 400;
+        font-size: .875rem;
+        // temp
+        display: none;
+
+        strong {
+          font-weight: 400;
+        }
+
+      }
+
+      .shipping-calculator-button {
+        font-size: .875rem;
+      }
+    }
+
+    &-shipping-methods {
+      @include reset-list();
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        margin-bottom: .5rem;
+        font-size: .875rem;
+        flex-wrap: wrap;
+      }
+
+      button#sendcloudshipping_service_point_select {
+        flex-basis: 100%;
+      }
+
+      input[type="radio"] {
+        margin-top: 0;
+      }
+
+      label {
+        margin-bottom: 0;
+        font-weight: 600 !important;
+      }
+    }
+  }
+}

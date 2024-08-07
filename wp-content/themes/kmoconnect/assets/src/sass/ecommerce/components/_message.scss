@@ -1,0 +1,103 @@
+@use "../../vendors/fontawesome" as *;
+@use "../../vendors/bootstrap";
+
+.woocommerce {
+  &-message,
+  &-error,
+  &-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 2em 1em 3.5em;
+    margin: 1.5rem 0;
+    position: relative;
+    background-color: #f7f6f7;
+    border-top: 3px solid var(--stw-theme-primary-color);
+    list-style: none outside;
+    width: auto;
+    word-wrap: break-word;
+
+    @include bootstrap.media-breakpoint-down(lg) {
+      align-items: baseline;
+      flex-direction: column-reverse;
+    }
+
+    &::before,
+    &::after {
+      content: " ";
+      display: table;
+    }
+
+    &::after {
+      clear: both;
+    }
+
+    &::before {
+      @extend %fa-icon;
+      @extend .fa-solid;
+      content: fa-content($fa-var-circle-check);
+      color: var(--stw-theme-primary-color);
+      display: inline-block;
+      position: absolute;
+      top: 1.2em;
+      width: 1rem;
+      height: 1rem;
+      left: 1.5em;
+
+      @include bootstrap.media-breakpoint-up(lg) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .button {
+      margin-top: .5rem;
+
+      @include bootstrap.media-breakpoint-up(lg) {
+        margin-top: 0;
+        margin-left: 1rem;
+      }
+    }
+
+    li {
+      list-style: none outside !important;
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+
+  &-info {
+    border-top-color: var(--message-info-clr);
+
+    &::before {
+      content: fa-content($fa-var-circle-info);
+      color: var(--message-info-clr);
+    }
+  }
+
+  &-error {
+    border-top-color: var(--message-error-clr);
+
+    &::before {
+      content: fa-content($fa-var-circle-xmark);
+      color: var(--message-error-clr);
+    }
+  }
+}
+
+
+// checkout coupon form
+.woocommerce-form-coupon-toggle .woocommerce-info {
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: .5rem;
+}
+
+.checkout_coupon {
+  margin-bottom: 2rem;
+
+  button[name="apply_coupon"] {
+    padding-block: .65rem !important;
+  }
+}

@@ -1,0 +1,18 @@
+.contact {
+  padding-bottom: 6rem;
+
+  &__col-1 {
+    .contact {
+      &__widget {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .stw-social-media{
+    &__icon {
+      font-size: 1.4rem;
+    }
+  }
+
+}

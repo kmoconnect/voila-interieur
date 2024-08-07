@@ -1,0 +1,93 @@
+@use "../../components/buttons";
+
+.wp-block-search {
+  --bs-border-radius-lg: 0;
+
+
+  &__label {
+    margin-bottom: .5rem;
+  }
+
+  &.wp-block-search__button-only {
+    .wp-block-search {
+      &__button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+      }
+
+      &__input {
+        padding: 0.5rem 1rem;
+        background: #f6f7f8;
+        font-size: .875rem;
+      }
+    }
+  }
+
+  &__button svg {
+    min-height: 21px;
+    min-width: 21px;
+  }
+
+  &__button-inside {
+    .wp-block-search {
+
+      &__input {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        font-size: .875rem;
+
+        &:focus,
+        &:hover {
+          border: none;
+          background-color: transparent;
+        }
+      }
+
+      &__button {
+        background-color: transparent;
+        border: none;
+        margin-left: auto;
+        padding: 0;
+
+        svg {
+          min-height: 20px;
+          min-width: 20px;
+          padding: 0;
+          color: #000;
+        }
+      }
+
+      &__inside-wrapper {
+        border-radius: var(--bs-border-radius-lg);
+        padding: 0.5rem 1rem;
+        background: #f6f7f8;
+        border: none;
+        margin-right: .75rem;
+        //margin-left: .5rem;
+
+        &:hover,
+        &:focus {
+          border-color: var(--stw-theme-primary-color);
+        }
+      }
+    }
+  }
+
+  &__button-outside {
+    .wp-block-search {
+      &__input {
+        padding: 0.5rem 1rem;
+        background: #f6f7f8;
+        font-size: .875rem;
+        border: none;
+      }
+
+      &__button {
+        @extend .btn;
+        @extend .btn-primary;
+      }
+    }
+  }
+}

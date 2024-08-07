@@ -1,0 +1,28 @@
+.stw-layouts {
+  .wc-block-mini-cart {
+    &.wp-block-woocommerce-mini-cart {
+      visibility: visible !important;
+    }
+
+    &__badge {
+      background: var(--stw-theme-primary-color);
+      color: #fff;
+      margin-left: 0;
+    }
+
+    &__drawer {
+      .wp-block-woocommerce-mini-cart-title-items-counter-block {
+        display: none;
+      }
+
+      span.wp-block-woocommerce-mini-cart-title-label-block {
+        font-size: var(--font-size-md);
+      }
+    }
+
+    &__button {
+      font-size: initial;
+      padding: 0;
+    }
+  }
+}

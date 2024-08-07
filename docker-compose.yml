@@ -1,0 +1,49 @@
+version: '3'
+services:
+  wordpress:
+    image: studiowebvision/wordpress-setup
+    container_name: ${PROJECT_NAME}
+    # restart: always
+    #    expose:
+    #      - 80
+    #      - 443
+    environment:
+      VIRTUAL_HOST: ${PROJECT_NAME}.test
+      HTTPS_METHOD: noredirect
+      CERT_NAME: default
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_NAME: ${PROJECT_NAME}
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DEBUG: true
+      WORDPRESS_CONFIG_EXTRA: |
+        define('FS_METHOD','direct');
+        define('WP_ENVIRONMENT_TYPE','development');
+        define('CORE_UPGRADE_SKIP_NEW_BUNDLED', true);
+        define('WP_AUTO_UPDATE_CORE', 'minor');
+        define('WP_MAIL_INTERVAL', 3600 );    
+        define('WP_POST_REVISIONS', false);
+        define('AUTOSAVE_INTERVAL', 300);
+        define('EMPTY_TRASH_DAYS', 14);
+        define('WP_DEFAULT_THEME', 'kmoconnect');
+        define('DISALLOW_FILE_EDIT', true);
+        define('COMPRESS_CSS', true);
+        define('COMPRESS_SCRIPTS', true);
+        define('CONCATENATE_SCRIPTS', true);
+        define('ENFORCE_GZIP', true);
+        define('WP_ALLOW_REPAIR', true);
+    volumes:
+      - wordpress-data:/var/www/html
+      - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./wp-content/themes:/var/www/html/wp-content/themes
+      - ./wp-content/install.php:/var/www/html/wp-content/install.php
+      - ./wp-content/acf-json:/var/www/html/wp-content/acf-json
+      - ~/docker/nginx-proxy/cert:/etc/ssl/certs
+
+volumes:
+  wordpress-data:
+    name: ${PROJECT_NAME}
+networks:
+  default:
+    external: true
+    name: nginx-proxy

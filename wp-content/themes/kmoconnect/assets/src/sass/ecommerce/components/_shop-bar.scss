@@ -1,0 +1,52 @@
+@use "../../vendors/bootstrap";
+
+.stw-layouts {
+  .shop-bar {
+
+    @include bootstrap.media-breakpoint-up(xl) {
+      display: block;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    @include bootstrap.media-breakpoint-up(xl) {
+      margin-left: 3rem;
+    }
+
+    .wp-block-group {
+      & > div,
+      & > form {
+        padding: .5rem;
+      }
+    }
+  }
+
+  .header--collapsed {
+    .shop-bar {
+      display: block;
+      margin: 2rem auto;
+
+      .shop_bar__widget {
+        .wp-block-group.is-nowrap {
+          flex-wrap: wrap;
+          justify-content: center;
+          row-gap: 1rem;
+        }
+
+        .wp-block-search {
+          flex-basis: 100%;
+        }
+
+        .wp-block-search__button-inside .wp-block-search__inside-wrapper {
+          background-color: #d2d2d2;
+        }
+      }
+    }
+  }
+
+}
+
+
