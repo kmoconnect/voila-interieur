@@ -1,14 +1,40 @@
 .stw-layouts {
   .hero {
     --height: 100vh;
-    height: auto;
+    height: 100vh;
 
     &__title {
       font-size: var(--font-size-xxxl);
     }
 
     &__img {
-      height: calc(var(--height) - var(--stw-navbar-height, 0px));
+      height: var(--height);
+    }
+
+    &__grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-family: 'Unna', serif;
+      order: 2;
+    }
+
+    &__subtitle {
+      order: 1;
+      font-size: var(--font-size-base);
+      font-weight: 400;
+      font-family: 'Unna', serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
   }
 }
@@ -16,7 +42,7 @@
 .logged-in {
   .hero {
     &__img {
-      height: calc(var(--height) - var(--stw-navbar-height, 0px) - var(--wp-admin--admin-bar--height));
+      height: calc(var(--height) - var(--wp-admin--admin-bar--height));
     }
   }
 }

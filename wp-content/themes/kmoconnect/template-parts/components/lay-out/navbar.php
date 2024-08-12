@@ -12,7 +12,7 @@ if ( is_array( $supports ) ) {
 }
 ?>
 <div class="header__wrapper">
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-xl navbar-light" role="navigation">
 			<?php do_action( "stw_navbar_start" ); ?>
 			<?php the_custom_logo(); ?>

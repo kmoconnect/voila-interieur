@@ -1,0 +1,145 @@
+{
+    "key": "group_66ba116f856ef",
+    "title": "Fiche",
+    "fields": [
+        {
+            "key": "field_66ba116feba1d",
+            "label": "Basis",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_66ba1179eba1e",
+            "label": "USP's",
+            "name": "usps",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "USP toevoegen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66ba1187eba1f",
+                    "label": "Icon",
+                    "name": "usp_icon",
+                    "aria-label": "",
+                    "type": "font-awesome",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "icon_sets": [
+                        "solid",
+                        "regular",
+                        "brands"
+                    ],
+                    "custom_icon_set": "",
+                    "default_label": "&lt;i class=\"fa-classic fa-solid fa-check fa-fw\"&gt;&lt;\/i&gt; Check",
+                    "default_value": "{\"family\" : \"classic\", \"style\" : \"solid\", \"id\" : \"check\", \"label\" : \"Check\", \"unicode\" : \"f00c\"}",
+                    "save_format": "element",
+                    "allow_null": 0,
+                    "show_preview": 1,
+                    "enqueue_fa": 0,
+                    "fa_live_preview": "",
+                    "choices": [],
+                    "parent_repeater": "field_66ba1179eba1e"
+                },
+                {
+                    "key": "field_66ba119feba20",
+                    "label": "Titel",
+                    "name": "usp_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "default_value": "",
+                    "default_post_title": 0,
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66ba1179eba1e"
+                },
+                {
+                    "key": "field_66ba11a7eba21",
+                    "label": "Korte omschrijving",
+                    "name": "usp_short_desc",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "default_value": "",
+                    "default_post_title": 0,
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66ba1179eba1e"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "391"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "CPT Blok: USP's",
+    "show_in_rest": 0,
+    "modified": 1723470498
+}

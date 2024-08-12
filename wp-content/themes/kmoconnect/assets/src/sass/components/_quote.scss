@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.stw-layouts .layout__block {
+  .quote {
+    &__profile-img-wrap {
+      max-width: toRem(60);
+    }
+  }
+}

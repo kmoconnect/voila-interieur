@@ -1,0 +1,2850 @@
+{
+    "key": "group_63f2157a4e787",
+    "title": "Lay-out blokken",
+    "fields": [
+        {
+            "key": "field_63f2157a88798",
+            "label": "Lay-out blokken",
+            "name": "lay-out_blokken",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "layout-blocks",
+                "id": ""
+            },
+            "admin_only": 0,
+            "layouts": {
+                "layout_63f21587b742c": {
+                    "key": "layout_63f21587b742c",
+                    "name": "text_block",
+                    "label": "Tekst",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_644ad654e6c61",
+                            "label": "Basis",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_640db715412db",
+                            "label": "Titel",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63f215a688799",
+                            "label": "Tekst",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_644adb8fb0629",
+                            "label": "Call to actions",
+                            "name": "buttons",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 3,
+                            "layout": "table",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Knop toevoegen (CTA)",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_644adb8fb062a",
+                                    "label": "Knop",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "default_post_title": 0,
+                                    "wpml_cf_preferences": 2,
+                                    "return_format": "array",
+                                    "parent_repeater": "field_644adb8fb0629"
+                                },
+                                {
+                                    "key": "field_644adb8fb062b",
+                                    "label": "Stijl knop",
+                                    "name": "style_button",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "default_post_title": 0,
+                                    "wpml_cf_preferences": 1,
+                                    "choices": {
+                                        "btn-primary": "Primaire knop",
+                                        "btn-secondary": "Secundaire knop"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "parent_repeater": "field_644adb8fb0629"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_644ad66fe6c62",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6542d61cefa0f",
+                            "label": "Lay-out inhoud",
+                            "name": "lay_out_content",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "choices": {
+                                "text-block--default": "Standaard",
+                                "text-block--title-left": "Titel links, tekst rechts",
+                                "text-block--title-right": "Titel rechts, tekst links"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644ad6d22cdb0",
+                            "label": "Container",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644ad6a72cdaf",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63f21616b6d2e": {
+                    "key": "layout_63f21616b6d2e",
+                    "name": "img_text_block",
+                    "label": "Tekst + foto",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_63fa1b5e0144d",
+                            "label": "Inhoud",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63fa1dc15a79c",
+                            "label": "Titel",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63f2161eb6d30",
+                            "label": "Tekst",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_63fa1abd07fba",
+                            "label": "Call to actions",
+                            "name": "buttons",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 3,
+                            "layout": "table",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Knop toevoegen (CTA)",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63fa1af307fbb",
+                                    "label": "Knop",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "wpml_cf_preferences": 2,
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63fa1abd07fba"
+                                },
+                                {
+                                    "key": "field_63fa2a26f03ee",
+                                    "label": "Stijl knop",
+                                    "name": "style_button",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "default_post_title": 0,
+                                    "wpml_cf_preferences": 1,
+                                    "choices": {
+                                        "btn-primary": "Primaire knop",
+                                        "btn-secondary": "Secundaire knop"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "parent_repeater": "field_63fa1abd07fba"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_63fa1b700144e",
+                            "label": "Foto",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63fa14ff07fb9",
+                            "label": "Foto",
+                            "name": "img",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_63fa1b7d0144f",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63fa1b8601450",
+                            "label": "Richting",
+                            "name": "direction",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "left": "Foto links, tekst rechts",
+                                "right": "Foto rechts, tekst links"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644f7b33d6b0b",
+                            "label": "Verticale uitlijning",
+                            "name": "vertical_align",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "flex-start": "Standaard",
+                                "center": "Gecentreerd"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65fad4edfb29c",
+                            "label": "Vergroot foto",
+                            "name": "open_lightbox",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "Bij klik op de foto wordt deze vergroot weergegeven (lightbox)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "Aan",
+                            "ui_off_text": "Uit",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_65fad4642dd12",
+                            "label": "Verhouding",
+                            "name": "aspect_ratio",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "choices": {
+                                "auto": "Automatisch",
+                                "16by9": "16:9",
+                                "4by3": "4:3",
+                                "3by2": "3:2",
+                                "1by1": "1:1"
+                            },
+                            "default_value": "3by2",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644c31288d618",
+                            "label": "Lay-out",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644f7c97aedb4",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6477230cd02fd": {
+                    "key": "layout_6477230cd02fd",
+                    "name": "img_block",
+                    "label": "Foto",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6477230dd0304",
+                            "label": "Foto",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6477230dd0305",
+                            "label": "Foto",
+                            "name": "img",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "return_format": "id",
+                            "library": "all",
+                            "featured_image": 0,
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_6477230dd0306",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6477247fcb8c1",
+                            "label": "Verhouding",
+                            "name": "aspect_ratio",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "auto": "Automatisch",
+                                "16by9": "16:9",
+                                "4by3": "4:3",
+                                "3by2": "3:2"
+                            },
+                            "default_value": "auto",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65fad4a8fb29b",
+                            "label": "Vergroot foto",
+                            "name": "open_lightbox",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "Bij klik op de foto wordt deze vergroot weergegeven (lightbox)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "Aan",
+                            "ui_off_text": "Uit",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_6477230dd0309",
+                            "label": "Lay-out",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6477230dd030a",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_645d5a2cb79b3": {
+                    "key": "layout_645d5a2cb79b3",
+                    "name": "video_block",
+                    "label": "Video",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_645d5aaab79b6",
+                            "label": "Video",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_645d5a55b79b5",
+                            "label": "Video",
+                            "name": "video",
+                            "aria-label": "",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "width": "",
+                            "height": ""
+                        },
+                        {
+                            "key": "field_645d5ab5b79b7",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_648c3500ac1a2",
+                            "label": "Autoplay",
+                            "name": "autoplay",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "Automatisch afspelen",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_645d5ac7b79b8",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_644942e71a82f": {
+                    "key": "layout_644942e71a82f",
+                    "name": "photo-gallery",
+                    "label": "Fotogalerij",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_644943163372a",
+                            "label": "Foto's",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_644943283372b",
+                            "label": "Foto's",
+                            "name": "images",
+                            "aria-label": "",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "return_format": "id",
+                            "library": "all",
+                            "min": "",
+                            "max": "",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "insert": "append",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_644943383372c",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6449434a3372d",
+                            "label": "Vergroot foto",
+                            "name": "open_lightbox",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "Bij klik op de foto wordt deze vergroot weergegeven (lightbox)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "Aan",
+                            "ui_off_text": "Uit",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_644f7edcb1303",
+                            "label": "Aantal kolommen",
+                            "name": "columns",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "choices": {
+                                "auto": "Automatisch",
+                                "1": "1 kolom",
+                                "2": "2 kolommen",
+                                "3": "3 kolommen",
+                                "4": "4 kolommen"
+                            },
+                            "default_value": 3,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644fb7908cb45",
+                            "label": "Type galerij",
+                            "name": "type_gallery",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "default": "Standaard",
+                                "masonry": "Masonry"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644f80681c1d1",
+                            "label": "Lay-out",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644f7f1cb1304",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_640dce52dd7bd": {
+                    "key": "layout_640dce52dd7bd",
+                    "name": "carousel_slider",
+                    "label": "Carousel slider",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_644f9d518ac21",
+                            "label": "Basis",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_640dce5add7bf",
+                            "label": "Titel",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Wanneer ingevuld, wordt de titel boven de slider weergegeven",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_640dce88dd7c0",
+                            "label": "Foto's",
+                            "name": "images",
+                            "aria-label": "",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "return_format": "id",
+                            "library": "all",
+                            "min": "",
+                            "max": "",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "insert": "append",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_644f9d438ac20",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_644f9d7879176",
+                            "label": "Toon pijltjes",
+                            "name": "show_arrows",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_65a7a6eb093a0",
+                            "label": "Paginatie",
+                            "name": "pagination",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Toon bolletjes of scrollbar onderaan de carousel",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "none": "Geen",
+                                "bullets": "Bolletjes",
+                                "scrollbar": "Scrollbar"
+                            },
+                            "default_value": "none",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644fb14068803",
+                            "label": "Automatisch afspelen",
+                            "name": "autoplay",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "message": "",
+                            "default_value": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_644fb0971e3b9",
+                            "label": "Aantal foto's in een slide",
+                            "name": "slides_per_view",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "choices": {
+                                "1": "1x foto",
+                                "2": "2x foto's",
+                                "3": "3x foto's",
+                                "4": "4x foto's",
+                                "5": "5x foto's",
+                                "6": "6x foto's"
+                            },
+                            "default_value": 3,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644f9e08acfce",
+                            "label": "Lay-out",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644f9e11acfcf",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_644fba05abd0e": {
+                    "key": "layout_644fba05abd0e",
+                    "name": "card_blocks",
+                    "label": "Kader elementen",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_644fbbad6e403",
+                            "label": "Kader elementen",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_644fbaa34ec40",
+                            "label": "Kader elementen",
+                            "name": "blocks",
+                            "aria-label": "",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "layouts": {
+                                "layout_645d5ca4718bd": {
+                                    "key": "layout_645d5ca4718bd",
+                                    "name": "blok",
+                                    "label": "Kader element",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_644fbe42f0d41",
+                                            "label": "Foto",
+                                            "name": "img",
+                                            "aria-label": "",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "default_post_title": 0,
+                                            "wpml_cf_preferences": 1,
+                                            "return_format": "id",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "preview_size": "thumbnail"
+                                        },
+                                        {
+                                            "key": "field_644fbe19f0d3e",
+                                            "label": "Titel",
+                                            "name": "title",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "default_post_title": 0,
+                                            "wpml_cf_preferences": 2,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_644fbe22f0d3f",
+                                            "label": "Korte omschrijving",
+                                            "name": "short_desc",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "default_post_title": 0,
+                                            "wpml_cf_preferences": 2,
+                                            "default_value": "",
+                                            "tabs": "visual",
+                                            "toolbar": "full",
+                                            "media_upload": 0,
+                                            "delay": 0
+                                        },
+                                        {
+                                            "key": "field_644fbe2ff0d40",
+                                            "label": "Link",
+                                            "name": "link",
+                                            "aria-label": "",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "default_post_title": 0,
+                                            "wpml_cf_preferences": 1,
+                                            "return_format": "array"
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "min": 1,
+                            "max": 4,
+                            "button_label": "Kader element toevoegen"
+                        },
+                        {
+                            "key": "field_644fbbbf6e404",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_644fcec652c69",
+                            "label": "Richting",
+                            "name": "direction",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "vertical": "Verticaal",
+                                "horizontal": "Horizontaal"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644fbbc86e405",
+                            "label": "Aantal kolommen",
+                            "name": "columns",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "auto": "Automatisch",
+                                "1": "1x kolom",
+                                "2": "2x kolommen",
+                                "3": "3x kolommen",
+                                "4": "4x kolommen"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644fcf0152c6a",
+                            "label": "Lay-out",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_644fcf0a52c6b",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "default_post_title": 0,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_646dc8ca817a0": {
+                    "key": "layout_646dc8ca817a0",
+                    "name": "lay-out_block",
+                    "label": "Herbruikbare blokken",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_646dc8db817a2",
+                            "label": "Blok",
+                            "name": "relation_blocks",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "post_type": [
+                                "stw_layout_blocks"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search"
+                            ],
+                            "return_format": "object",
+                            "min": "",
+                            "max": "",
+                            "elements": "",
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66053c4f3b117": {
+                    "key": "layout_66053c4f3b117",
+                    "name": "quote",
+                    "label": "Quote",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_66ba075562ff7",
+                            "label": "Inleiding",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_66ba075d62ff8",
+                            "label": "Titel",
+                            "name": "quote_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_66053c543b119",
+                            "label": "Basis",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "only_front": 0,
+                            "frontend_admin_display_mode": "edit",
+                            "no_values_message": "",
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_66053d2b3b122",
+                            "label": "Quotes",
+                            "name": "quotes",
+                            "aria-label": "",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "only_front": 0,
+                            "frontend_admin_display_mode": "edit",
+                            "no_values_message": "",
+                            "layouts": {
+                                "layout_66053d327aaad": {
+                                    "key": "layout_66053d327aaad",
+                                    "name": "quote",
+                                    "label": "Quote",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_66053d473b123",
+                                            "label": "Basis",
+                                            "name": "",
+                                            "aria-label": "",
+                                            "type": "tab",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "placement": "top",
+                                            "endpoint": 0
+                                        },
+                                        {
+                                            "key": "field_66053c603b11a",
+                                            "label": "Omschrijving",
+                                            "name": "desc",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 2,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "default_value": "",
+                                            "default_post_content": 0,
+                                            "default_post_excerpt": 0,
+                                            "tabs": "visual",
+                                            "toolbar": "basic",
+                                            "media_upload": 0,
+                                            "delay": 0
+                                        },
+                                        {
+                                            "key": "field_660572fbec44e",
+                                            "label": "Profiel",
+                                            "name": "",
+                                            "aria-label": "",
+                                            "type": "tab",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 0,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "placement": "top",
+                                            "endpoint": 0
+                                        },
+                                        {
+                                            "key": "field_66053caa3b11d",
+                                            "label": "Naam",
+                                            "name": "profile_name",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 2,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "default_value": "",
+                                            "default_post_title": 0,
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_66053cbe3b11e",
+                                            "label": "Functie",
+                                            "name": "profile_function",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 0,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "default_value": "",
+                                            "default_post_title": 0,
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_6605446e43f0f",
+                                            "label": "Profielfoto",
+                                            "name": "profile_img",
+                                            "aria-label": "",
+                                            "type": "image",
+                                            "instructions": "Profielfoto wordt naast naam en functie weergegeven",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 1,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "return_format": "id",
+                                            "library": "all",
+                                            "featured_image": 0,
+                                            "no_file_text": "",
+                                            "button_text": "",
+                                            "custom_directory": 0,
+                                            "hide_from_library": 0,
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "preview_size": "thumbnail"
+                                        },
+                                        {
+                                            "key": "field_66053f4daea60",
+                                            "label": "Afbeelding",
+                                            "name": "",
+                                            "aria-label": "",
+                                            "type": "tab",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 0,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "placement": "top",
+                                            "endpoint": 0
+                                        },
+                                        {
+                                            "key": "field_66053c923b11c",
+                                            "label": "Afbeelding",
+                                            "name": "img",
+                                            "aria-label": "",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "admin_only": 0,
+                                            "wpml_cf_preferences": 3,
+                                            "only_front": 0,
+                                            "frontend_admin_display_mode": "edit",
+                                            "no_values_message": "",
+                                            "return_format": "id",
+                                            "library": "all",
+                                            "featured_image": 0,
+                                            "no_file_text": "",
+                                            "button_text": "",
+                                            "custom_directory": 0,
+                                            "hide_from_library": 0,
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "preview_size": "thumbnail"
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "min": "",
+                            "max": "",
+                            "button_label": "Quote toevoegen"
+                        },
+                        {
+                            "key": "field_66053ce93b11f",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "only_front": 0,
+                            "frontend_admin_display_mode": "edit",
+                            "no_values_message": "",
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6616d6cffd166",
+                            "label": "Slider inschakelen?",
+                            "name": "enable_slider",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_66053e8c8adf2",
+                            "label": "Toon pijltjes",
+                            "name": "show_arrows",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6616d6cffd166",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_66053e9e8adf3",
+                            "label": "Paginatie",
+                            "name": "pagination",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Toon bolletjes of scrollbar onderaan de carousel",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6616d6cffd166",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "choices": {
+                                "none": "Geen",
+                                "bullets": "Bolletjes",
+                                "scrollbar": "Scrollbar"
+                            },
+                            "default_value": "none",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_66053eab8adf4",
+                            "label": "Automatisch afspelen",
+                            "name": "autoplay",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6616d6cffd166",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "message": "",
+                            "default_value": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_66058337682f4",
+                            "label": "Snelheid tussen slides",
+                            "name": "autoplayspeed",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "Snelheid in milliseconden",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_66053eab8adf4",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "only_front": 0,
+                            "frontend_admin_display_mode": "edit",
+                            "no_values_message": "",
+                            "default_value": 6000,
+                            "min": "",
+                            "max": "",
+                            "placeholder": "",
+                            "step": 50,
+                            "prepend": "",
+                            "append": "ms"
+                        },
+                        {
+                            "key": "field_66058686beb85",
+                            "label": "Snelheid overgang",
+                            "name": "speed",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "Overgang snelheid in milliseconden",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_66053eab8adf4",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "only_front": 0,
+                            "frontend_admin_display_mode": "edit",
+                            "no_values_message": "",
+                            "default_value": 1000,
+                            "min": "",
+                            "max": "",
+                            "placeholder": "",
+                            "step": 50,
+                            "prepend": "",
+                            "append": "ms"
+                        },
+                        {
+                            "key": "field_660571b773838",
+                            "label": "Richting afbeelding",
+                            "name": "layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Van toepassing indien afbeelding geselecteerd is.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "only_front": 0,
+                            "frontend_admin_display_mode": "edit",
+                            "no_values_message": "",
+                            "choices": {
+                                "quote--img": "Afbeelding links",
+                                "quote--img quote--img-right": "Afbeelding rechts"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_66053cfb3b120",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_64a2e454994be": {
+                    "key": "layout_64a2e454994be",
+                    "name": "shortcode",
+                    "label": "Shortcode",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_64a2ed1ad537e",
+                            "label": "Shortcode",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_64a2e460994c0",
+                            "label": "Shortcode",
+                            "name": "shortcode",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "[gravityform id=\"1\" title=\"true\"]",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64a2ed442d98f",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_64a2e535f9491",
+                            "label": "Lay-out",
+                            "name": "lay-out",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "<p>Bij \"volledige breedte\" wordt de blok over de volledige breedte van het scherm weergegeven.<\/p>\r\n<p>Standaard wordt de blok uitgelijnd volgens de standaard lay-out.<\/p>",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "choices": {
+                                "container": "Standaard",
+                                "container-fluid": "Volledige breedte"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_64a2e560f9492",
+                            "label": "CSS class",
+                            "name": "class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 1,
+                            "wpml_cf_preferences": 1,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66b9f4b5201b5": {
+                    "key": "layout_66b9f4b5201b5",
+                    "name": "window_decoration_collection",
+                    "label": "Raamdecoratie collecties",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_66b9f4fa56a48",
+                            "label": "Basis",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_66b9f50456a49",
+                            "label": "Titel",
+                            "name": "lead_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_66b9f51156a4a",
+                            "label": "Call to actions",
+                            "name": "buttons",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Nieuwe regel",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_66b9f52c56a4b",
+                                    "label": "Knop",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "return_format": "array",
+                                    "parent_repeater": "field_66b9f51156a4a"
+                                },
+                                {
+                                    "key": "field_66b9f53956a4c",
+                                    "label": "Stijl knop",
+                                    "name": "style_button",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "choices": {
+                                        "btn-primary": "Primaire knop",
+                                        "btn-secondary": "Secondaire knop"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "parent_repeater": "field_66b9f51156a4a"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_66b9f4bc201b7",
+                            "label": "Opties",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_66b9f4c2201b8",
+                            "label": "Aantal kolommen",
+                            "name": "number_columns",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_value": 3,
+                            "min": "",
+                            "max": "",
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66ba09d8adc93": {
+                    "key": "layout_66ba09d8adc93",
+                    "name": "banner",
+                    "label": "Banner",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_66ba09ddadc95",
+                            "label": "Basis",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_66ba09e3adc96",
+                            "label": "Titel",
+                            "name": "banner_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_66ba09faadc98",
+                            "label": "Subtitel",
+                            "name": "banner_subtitle",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Wordt weergegeven boven de titel",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_value": "",
+                            "default_post_title": 0,
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_66ba09ecadc97",
+                            "label": "Korte omschrijving",
+                            "name": "banner_desc",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "default_value": "",
+                            "default_post_content": 0,
+                            "default_post_excerpt": 0,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_66ba0ad6e17c3",
+                            "label": "Call to actions",
+                            "name": "buttons",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Knop toevoegen",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_66ba0ae1e17c4",
+                                    "label": "Knop",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "return_format": "array",
+                                    "parent_repeater": "field_66ba0ad6e17c3"
+                                },
+                                {
+                                    "key": "field_66ba0aefe17c5",
+                                    "label": "Stijl knop",
+                                    "name": "style_button",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "admin_only": 0,
+                                    "choices": {
+                                        "btn-primary": "Primaire knop",
+                                        "btn-secondary": "Secondaire knop"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "parent_repeater": "field_66ba0ad6e17c3"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_66ba0a13adc99",
+                            "label": "Afbeelding",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_66ba0a19adc9a",
+                            "label": "Afbeelding",
+                            "name": "banner_img",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "return_format": "id",
+                            "library": "all",
+                            "featured_image": 0,
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Blok toevoegen"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1723468613
+}

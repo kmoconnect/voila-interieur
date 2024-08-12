@@ -2,6 +2,7 @@
 
 .header {
   background-color: #fff;
+  padding-inline: 1rem;
 
   &--fixed {
     position: absolute;
@@ -29,7 +30,7 @@
   }
 
   &__spacer {
-    height: var(--stw-navbar-height);
+    display: none;
   }
 }
 

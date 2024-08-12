@@ -1,11 +1,12 @@
 .navbar {
   --bs-navbar-nav-link-padding-x: 1rem;
   --bs-navbar-padding-y: 1.5rem;
-  --bs-navbar-hover-color: var(--stw-theme-primary-color);
-  --bs-navbar-active-color: var(--stw-theme-primary-color);
+  --bs-navbar-hover-color: var(--stw-theme-secondary-color);
+  --bs-navbar-active-color: var(--stw-theme-secondary-color);
   --bs-navbar-toggler-border-color: transparent;
   --bs-navbar-toggler-font-size: 1.45rem;
   --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-color: #fff;
 
   .dropdown-menu {
     --bs-dropdown-padding-y: .75rem;
@@ -18,6 +19,8 @@
 
   .nav {
     &-link {
+      --bs-nav-link-font-size: 1.1rem;
+      
       position: relative;
       display: inline-block;
       align-items: center;
@@ -36,11 +39,16 @@
         font-size: 13px;
         margin-left: .75rem;
       }
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+      }
     }
   }
 
   &-brand {
-    --width-logo: 15rem;
+    --width-logo: 10rem;
 
     svg,
     img {
@@ -51,6 +59,10 @@
   }
 
   &--scroll {
+    --bs-navbar-color: #000;
+    --bs-navbar-hover-color: var(--stw-theme-primary-color);
+    --bs-navbar-active-color: var(--stw-theme-primary-color);
+
     .navbar {
       &-brand {
         img,

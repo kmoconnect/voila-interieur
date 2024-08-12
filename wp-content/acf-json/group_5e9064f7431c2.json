@@ -1,0 +1,1014 @@
+{
+    "key": "group_5e9064f7431c2",
+    "title": "Algemene opties",
+    "fields": [
+        {
+            "key": "field_5e906a6b9cc8f",
+            "label": "Huisstijl",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 0,
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e9066ee169c1",
+            "label": "Logo",
+            "name": "logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload je logo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg,jpeg,png,svg",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_5e90869c1f3d6",
+            "label": "Hoofdkleur",
+            "name": "primary_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Hoofdkleur die je gebruikt in je huisstijl",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "wpml_cf_preferences": 1,
+            "default_value": "rgba(32, 82, 113,1)",
+            "enable_opacity": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_5e947e9ba4694",
+            "label": "Tweede kleur",
+            "name": "secondary_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Ander kleur die je gebruikt in je huisstijl",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "enable_opacity": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_644c3c091a043",
+            "label": "Titel kleur",
+            "name": "title_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Kleur voor de titels",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "enable_opacity": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_5e94c193aad73",
+            "label": "Tekst kleur",
+            "name": "text_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Kleur voor tekst",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "enable_opacity": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_5e906742fb241",
+            "label": "Sociale media",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e90677cfb242",
+            "label": "Facebook link",
+            "name": "facebook_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL van je Facebook pagina",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "Bijvoorbeeld: https:\/\/www.facebook.com\/studiowebvision"
+        },
+        {
+            "key": "field_5e9068eb4ea1f",
+            "label": "Instagram link",
+            "name": "instagram_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL van je Instagram pagina",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "Bijvoorbeeld: https:\/\/www.instagram.com\/studiowebvision\/"
+        },
+        {
+            "key": "field_5e9068f64ea20",
+            "label": "Twitter link",
+            "name": "twitter_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL van je Twitter pagina",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "Voorbeeld: https:\/\/twitter.com\/jeprofiel"
+        },
+        {
+            "key": "field_5e9069034ea21",
+            "label": "LinkedIn link",
+            "name": "linkedin_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL van je LinkedIn pagina",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "Bijvoorbeeld: https:\/\/www.linkedin.com\/in\/sanderrebry\/"
+        },
+        {
+            "key": "field_5e906e6066845",
+            "label": "YouTube link",
+            "name": "youtube_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL van je YouTube pagina",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "Bijvoorbeeld: https:\/\/www.youtube.com\/jepagina"
+        },
+        {
+            "key": "field_5e9069474d614",
+            "label": "Bedrijfsgegevens",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e9069614d615",
+            "label": "Bedrijfsnaam",
+            "name": "bedrijfsnaam",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5e906d5333f0f",
+            "label": "Adres",
+            "name": "adres",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Je adres (straat + huisnr)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5ead7b8b5e1a7",
+            "label": "Postcode",
+            "name": "postcode",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5ead7b9d5e1a8",
+            "label": "Gemeente",
+            "name": "gemeente",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5ead7bae5e1a9",
+            "label": "Land",
+            "name": "land",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "BE": "België",
+                "NL": "Nederland",
+                "FR": "Frankrijk",
+                "LU": "Luxemburg"
+            },
+            "default_value": "België",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e90871231aba",
+            "label": "E-mail adres",
+            "name": "e-mail_adres",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "E-mail adres die wordt weergegeven bij contactgegevens",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5e906cc1dfb9f",
+            "label": "Telefoon",
+            "name": "telefoon",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5fe8411645602",
+            "label": "Fax",
+            "name": "fax",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5e906cdadfba0",
+            "label": "Mobiel nummer",
+            "name": "mobiel_nummer",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5e906d3933f0e",
+            "label": "BTW nummer",
+            "name": "btw_nummer",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5e907a4766846",
+            "label": "KvK nummer",
+            "name": "kvk_nummer",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Indien van toepassing",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5e937ee9f74ed",
+            "label": "Openingsuren",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e937f10f74ee",
+            "label": "Openingsuren inschakelen",
+            "name": "openingsuren_inschakelen",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Zet aan wanneer je openingsuren wilt weergeven",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_63f7e2af7abe9",
+            "label": "Gesloten op feestdagen",
+            "name": "gesloten_op_feestdagen",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Gesloten op feestdagen?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e937f10f74ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_5e93800849e68",
+            "label": "Openingsuren",
+            "name": "openingsuren",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e937f10f74ee",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Dag toevoegen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_5e93801649e69",
+                    "label": "Dag",
+                    "name": "dag",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "wpml_cf_preferences": 1,
+                    "choices": {
+                        "monday": "Maandag",
+                        "tuesday": "Dinsdag",
+                        "wednesday": "Woensdag",
+                        "thursday": "Donderdag",
+                        "friday": "Vrijdag",
+                        "saturday": "Zaterdag",
+                        "sunday": "Zondag"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_5e93800849e68"
+                },
+                {
+                    "key": "field_5e94625f56a8e",
+                    "label": "Sluitingsdag",
+                    "name": "sluitingsdag",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5fea2c4f89730",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "wpml_cf_preferences": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "parent_repeater": "field_5e93800849e68"
+                },
+                {
+                    "key": "field_5fea2c4f89730",
+                    "label": "Aangepaste tekst",
+                    "name": "aangepaste_tekst_actief",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "wpml_cf_preferences": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "parent_repeater": "field_5e93800849e68"
+                },
+                {
+                    "key": "field_5fea2c7289731",
+                    "label": "Aangepaste tekst",
+                    "name": "aangepaste_tekst",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5fea2c4f89730",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Bv: enkel op afspraak",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_5e93800849e68"
+                },
+                {
+                    "key": "field_5e9437ae5c243",
+                    "label": "Uren",
+                    "name": "uren",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e94625f56a8e",
+                                "operator": "!=",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_5fea2c4f89730",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "admin_only": 0,
+                    "wpml_cf_preferences": 1,
+                    "layout": "block",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Uur toevoegen",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_5e93800849e68",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e9437e85c245",
+                            "label": "Open om",
+                            "name": "open_om",
+                            "aria-label": "",
+                            "type": "time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "display_format": "H:i",
+                            "return_format": "H:i",
+                            "parent_repeater": "field_5e9437ae5c243"
+                        },
+                        {
+                            "key": "field_5e9437f05c246",
+                            "label": "Gesloten om",
+                            "name": "gesloten_om",
+                            "aria-label": "",
+                            "type": "time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "admin_only": 0,
+                            "wpml_cf_preferences": 1,
+                            "display_format": "H:i",
+                            "return_format": "H:i",
+                            "parent_repeater": "field_5e9437ae5c243"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5f2095bccbae7",
+            "label": "Beheerder",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6451588ffed75",
+            "label": "Onderhoudsmodus",
+            "name": "maintenance_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "none": "Geen",
+                "coming_soon": "Wachtpagina",
+                "maintenance": "Onderhoud"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_63f7e5d5f5b22",
+            "label": "Gepland onderhoud van",
+            "name": "maintenance_start_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6451588ffed75",
+                        "operator": "==",
+                        "value": "maintenance"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "display_format": "d-m-Y H:i:s",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_63f7e64b4f350",
+            "label": "Gepland onderhoud tot",
+            "name": "maintenance_end_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6451588ffed75",
+                        "operator": "==",
+                        "value": "maintenance"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "display_format": "d-m-Y H:i:s",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_645173f47c6a1",
+            "label": "Achtergrond foto",
+            "name": "coming_soon_background_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6451588ffed75",
+                        "operator": "==",
+                        "value": "coming_soon"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 1,
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_645174677c6a2",
+            "label": "Inhoud",
+            "name": "coming_soon_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6451588ffed75",
+                        "operator": "==",
+                        "value": "coming_soon"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 1,
+            "default_post_title": 0,
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "algemene-opties"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698933763
+}

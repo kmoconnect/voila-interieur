@@ -3,9 +3,9 @@
 @use "../vendors/bootstrap";
 
 :root {
-  --stw-theme-font-base: 'Open Sans', sans-serif;
-  --stw-theme-font-heading: 'Open Sans', sans-serif;
-  --stw-navbar-height: 96px;
+  --stw-theme-font-base: 'DM Sans', sans-serif;
+  --stw-theme-font-heading: 'Unna', serif;
+  --stw-navbar-height: 13.625rem;
   --webvision-bg-topbanner: var(--stw-theme-secondary-color);
 
   // bootstrap
@@ -19,13 +19,13 @@
   --bs-primary-border-subtle: var(--stw-theme-primary-color);
 
   // font sizes
-  --font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
-  --font-size-base: 1rem;
-  --font-size-md: clamp(1rem, 2vw + 1rem, 1.44rem);
-  --font-size-lg: clamp(1.125rem, 2vw + 1rem, 1.728rem);
-  --font-size-xl: clamp(1.5rem, 2vw + 1rem, 2.074rem);
-  --font-size-xxl: clamp(1.813rem, 2vw + 1rem, 2.438rem);
-  --font-size-xxxl: clamp(2.188rem, 2vw + 1rem, 3rem);
+  --font-size-sm: clamp(0.8rem, -0.11vi + 0.83rem, 0.74rem);
+  --font-size-base: clamp(1rem, 0vi + 1rem, 1rem);
+  --font-size-md: clamp(1.25rem, 0.18vi + 1.2rem, 1.35rem);
+  --font-size-lg: clamp(1.5rem, 0.47vi + 1.44rem, 1.65rem);
+  --font-size-xl: clamp(1.65rem, 0.92vi + 1rem, 2rem);
+  --font-size-xxl: clamp(2rem, 1.45vi + 1.04rem, 2.75rem);
+  --font-size-xxxl: clamp(3.05rem, 2.6vi + 2.4rem, 4.48rem);
 
   // swiper
   --swiper-theme-color: var(--stw-theme-primary-color);
@@ -87,7 +87,7 @@ h1,
 h2,
 .h2 {
   font-size: var(--font-size-xxl);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h3,

@@ -10,4 +10,8 @@
   &--center &__wrapper {
     justify-content: center;
   }
+
+  &--end &__wrapper {
+    justify-content: flex-end;
+  }
 }

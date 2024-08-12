@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KMO Connect\n"
-"POT-Creation-Date: 2024-05-25 16:15+0200\n"
-"PO-Revision-Date: 2024-05-25 16:17+0200\n"
+"POT-Creation-Date: 2024-08-12 09:17+0200\n"
+"PO-Revision-Date: 2024-08-12 09:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -24,45 +24,50 @@ msgstr ""
 
 #: app/Hooks/custom-post-types.php:18
 msgctxt "Post Type General Name"
-msgid "Services"
-msgstr "Aanbod"
+msgid "Window decorations"
+msgstr "Raamdecoraties"
 
 #: app/Hooks/custom-post-types.php:19
 msgctxt "Post Type Singular Name"
-msgid "Service"
-msgstr "Aanbod"
+msgid "Window decoration"
+msgstr "Raamdecoratie"
 
 #: app/Hooks/custom-post-types.php:20
 msgctxt "post type slug"
-msgid "services"
-msgstr "aanbod"
-
-#: app/Hooks/custom-post-types.php:64
-msgctxt "Post Type General Name"
-msgid "Realisations"
-msgstr "Realisaties"
+msgid "window decoration"
+msgstr "raamdecoratie"
 
 #: app/Hooks/custom-post-types.php:65
-msgctxt "Post Type Singular Name"
-msgid "Realisation"
-msgstr "Realisatie"
+msgctxt "Post Type General Name"
+msgid "Projects"
+msgstr "Projecten"
 
 #: app/Hooks/custom-post-types.php:66
+msgctxt "Post Type Singular Name"
+msgid "Project"
+msgstr "Project"
+
+#: app/Hooks/custom-post-types.php:67
 msgctxt "post type slug"
-msgid "realisations"
-msgstr "realisaties"
+msgid "projects"
+msgstr "projecten"
 
-#: app/Hooks/filters.php:162
-msgid "View realization"
-msgstr "Bekijk realisatie"
-
-#: app/Setup/base.php:160
+#: app/Setup/base.php:167
 msgid "Next"
 msgstr "Volgende"
 
-#: app/Setup/base.php:166
+#: app/Setup/base.php:173
 msgid "Previous"
 msgstr "Vorige"
+
+#: app/Setup/base.php:304
+#, php-format
+msgid "Back to %s"
+msgstr "Terug naar %s"
+
+#: app/Setup/base.php:306 template-parts/components/lay-out/back-link.php:4
+msgid "Back to overview"
+msgstr "Terug naar overzicht"
 
 #: app/Woocommerce/Admin/product.php:13 app/Woocommerce/Frontend/product.php:79
 msgid "Description"
@@ -71,6 +76,18 @@ msgstr "Omschrijving"
 #: app/Woocommerce/Admin/product.php:20
 msgid "Short description"
 msgstr "Korte omschrijving"
+
+#: app/Woocommerce/Frontend/cart.php:37
+msgid "Discount code:"
+msgstr "Kortingscode:"
+
+#: app/Woocommerce/Frontend/cart.php:39
+msgid "Add discount code"
+msgstr ""
+
+#: app/Woocommerce/Frontend/cart.php:43
+msgid "Apply"
+msgstr "Toepassen"
 
 #: app/Woocommerce/Frontend/checkout.php:61
 msgid "Pay"
@@ -84,27 +101,27 @@ msgstr "Terug naar shop"
 msgid "Product details"
 msgstr "Product details"
 
-#: app/Woocommerce/Frontend/shop.php:50
+#: app/Woocommerce/Frontend/shop.php:54
 msgid "Order by:"
 msgstr "Sorteer op:"
 
-#: app/Woocommerce/base.php:187
+#: app/Woocommerce/base.php:184
 msgid "Popularity"
 msgstr "Populariteit"
 
-#: app/Woocommerce/base.php:188
+#: app/Woocommerce/base.php:185
 msgid "Latest"
 msgstr "Nieuwste"
 
-#: app/Woocommerce/base.php:189
+#: app/Woocommerce/base.php:186
 msgid "Price low - high"
 msgstr "Prijs laag - hoog"
 
-#: app/Woocommerce/base.php:190
+#: app/Woocommerce/base.php:187
 msgid "Price high - low"
 msgstr "Prijs hoog - laag"
 
-#: app/Woocommerce/base.php:191
+#: app/Woocommerce/base.php:188
 msgid "Average rating"
 msgstr "Gemiddelde beoordeling"
 
@@ -116,22 +133,21 @@ msgstr "Bedankt voor uw bestelling!"
 msgid "You might also like this..."
 msgstr "Dit vind je misschien ook leuk…"
 
+#: app/Woocommerce/filters.php:125
+msgid "Shop"
+msgstr ""
+
 #: home.php:26
 msgid "There are currently no items"
 msgstr "Er zijn momenteel geen objecten"
 
-#: single.php:18
-#, php-format
-msgid "Back to %s"
-msgstr "Terug naar %s"
-
-#: single.php:20 template-parts/components/lay-out/back-link.php:4
-msgid "Back to overview"
-msgstr "Terug naar overzicht"
-
 #: template-parts/archive/default.php:25
 msgid "Discover more"
 msgstr "Ontdek meer"
+
+#: template-parts/archive/services.php:35
+msgid "Read more"
+msgstr "Lees meer"
 
 #: template-parts/woocommerce/my-account/registration-left.php:9
 msgid "Register"
@@ -174,20 +190,32 @@ msgstr "Sander Rebry"
 msgid "https://kmoconnect.be"
 msgstr "https://kmoconnect.be"
 
-#~ msgid "Read more"
-#~ msgstr "Lees meer"
-
 #~ msgctxt "Post Type General Name"
-#~ msgid "Projects"
-#~ msgstr "Projecten"
+#~ msgid "Services"
+#~ msgstr "Aanbod"
 
 #~ msgctxt "Post Type Singular Name"
-#~ msgid "Project"
-#~ msgstr "Project"
+#~ msgid "Service"
+#~ msgstr "Aanbod"
 
 #~ msgctxt "post type slug"
-#~ msgid "projects"
-#~ msgstr "projecten"
+#~ msgid "services"
+#~ msgstr "aanbod"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Realisations"
+#~ msgstr "Realisaties"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Realisation"
+#~ msgstr "Realisatie"
+
+#~ msgctxt "post type slug"
+#~ msgid "realisations"
+#~ msgstr "realisaties"
+
+#~ msgid "View realization"
+#~ msgstr "Bekijk realisatie"
 
 #~ msgid "Brands"
 #~ msgstr "Merken"
