@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - dev
-name: Deploy website to dev
+name: Deploy website to dev server
 jobs:
   build:
     runs-on: ubuntu-latest
