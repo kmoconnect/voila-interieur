@@ -127,3 +127,21 @@ function dashboard_post_types( $post_types ) {
 	return $post_types;
 }
 \add_filter( "stw_dashboard_post_types", __NAMESPACE__ . "\\dashboard_post_types" );
+
+function archive_data_attrs( $data, $post_type ) {
+	if ( $post_type === "projects" ) {
+		$data["columns"] = 2;
+	}
+
+	return $data;
+}
+\add_filter( "stw_archive_data_attrs", __NAMESPACE__ . "\\archive_data_attrs", 10, 2 );
+
+function customize_lead( $block, $post_type ) {
+	if ( is_singular( "services" ) ) {
+		$block["name"] = "lead-services";
+	}
+
+	return $block;
+}
+\add_filter( "stw_the_lead", __NAMESPACE__ . "\\customize_lead", 10, 2 );

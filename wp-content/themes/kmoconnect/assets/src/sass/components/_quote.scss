@@ -5,5 +5,17 @@
     &__profile-img-wrap {
       max-width: toRem(60);
     }
+
+    &__title {
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 30px;
+        margin-inline: auto;
+        background: var(--stw-theme-secondary-color);
+        margin-top: 1rem;
+      }
+    }
   }
 }

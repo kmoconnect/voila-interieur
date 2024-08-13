@@ -9,7 +9,7 @@ $data_attrs     = apply_filters( "stw_archive_data_attrs", [
 ], $post_type );
 ?>
 <div class="layout">
-    <section class="layout__block layout__block--group-cards !pt-0">
+    <section class="layout__block layout__block--group-cards">
         <div class="container">
 			<?php if ( have_posts() ) : ?>
                 <div class="group-cards" <?php do_action( "output_data_attributes", $data_attrs ); ?>>
@@ -31,11 +31,13 @@ $data_attrs     = apply_filters( "stw_archive_data_attrs", [
 
 							foreach ( $template_files as $template_file ) {
 								if ( locate_template( "template-parts/components/cards/$template_file.php" ) ) {
-									do_action( "stw_get_template", "template-parts/components/cards/{$template_file}", $card );
+									do_action( "stw_get_template", "template-parts/components/cards/{$template_file}",
+										$card );
 									break;
 								} else {
 									$card["class"] = [ "primary-card--vertical" ];
-									do_action( "stw_get_template", "template-parts/components/cards/primary-card", $card );
+									do_action( "stw_get_template", "template-parts/components/cards/primary-card",
+										$card );
 								}
 							}
 

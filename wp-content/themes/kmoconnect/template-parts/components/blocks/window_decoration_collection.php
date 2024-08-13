@@ -22,7 +22,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
     <div class="<?php echo esc_attr( implode( " ", $block["class"] ) ); ?>"<?php do_action( "output_data_attributes",
 		$block["data"] ); ?>>
         <div class="<?php echo $block["container_class"]; ?>">
-            <div class="decoration__collection__wrapper">
+            <div class="decoration__collection__wrapper group-cards">
                 <div class="decoration-collection__lead mb-10">
                     <div class="row justify-content-between">
                         <div class="col-md-8">
@@ -42,7 +42,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
                     <div class="row row-cols-3 g-8">
 						<?php foreach ( $block["items"] as $item ): ?>
                             <div class="col">
-								<?php get_template_part( "template-parts/components/cards/services-card", null,
+								<?php do_action( "stw_get_template", "template-parts/components/cards/primary-card",
 									$item ); ?>
                             </div>
 						<?php endforeach; ?>

@@ -1,5 +1,65 @@
+@use "../abstracts" as *;
+@use "../vendors/fontawesome" as *;
+
 .stw-layouts {
   .lead {
-    
+    padding-block: 3rem;
+
+    &__title {
+      font-size: var(--font-size-xxl);
+      margin-bottom: .5rem;
+
+      &::after {
+        content: "";
+        height: 2px;
+        background-color: var(--stw-theme-secondary-color);
+        width: 40px;
+        display: block;
+        margin-block: .5rem;
+      }
+    }
+
+    &__desc {
+      margin-top: 1rem;
+      color: var(--stw-theme-text-color);
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__btn {
+      &.prev-link {
+        font-size: 1rem;
+
+        &::before {
+          @extend %fa-icon;
+          @extend .fas;
+          content: fa-content($fa-var-long-arrow-left);
+          margin-right: .25rem;
+        }
+      }
+    }
+
+    &__cta {
+      margin-top: 1rem;
+    }
+
+    &--bg {
+      .lead {
+        &__content,
+        &__title {
+          color: initial;
+        }
+
+        &__img-wrapper {
+          margin-top: 1.5rem;
+        }
+
+        &__img {
+          max-height: toRem(675);
+        }
+      }
+    }
   }
 }

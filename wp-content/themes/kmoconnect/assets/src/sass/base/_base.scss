@@ -1,11 +1,13 @@
 @use "../fonts/typography" as *;
 @use "../components/buttons" as *;
 @use "../vendors/bootstrap";
+@use "../utils/utils" as *;
 
 :root {
   --stw-theme-font-base: 'DM Sans', sans-serif;
   --stw-theme-font-heading: 'Unna', serif;
   --stw-navbar-height: 13.625rem;
+  --stw-theme-bg-body-color: #f9f7f6;
   --webvision-bg-topbanner: var(--stw-theme-secondary-color);
 
   // bootstrap
@@ -44,12 +46,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  &:not(.home) {
+    background-color: var(--stw-theme-bg-body-color);
+  }
 }
 
 a {
   color: var(--stw-theme-primary-color);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: 250ms ease-in-out;
 
   &:hover,
@@ -137,5 +143,11 @@ body.gdpr {
   h2,
   .h2 {
     font-size: 1.6rem;
+  }
+}
+
+.page-small-container {
+  .site .container {
+    @extend .container-small;
   }
 }

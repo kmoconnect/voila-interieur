@@ -92,6 +92,9 @@ $block["wrapper_class"] = wp_parse_args( [
                                             </div>
 										<?php endif; ?>
                                         <blockquote class="quote__block d-flex flex-column align-items-center">
+                                            <div class="quote__icon fs-3 text-secondary">
+                                                <i class="fa-solid fa-quote-left"></i>
+                                            </div>
                                             <h5 class="quote__desc text-center">
 												<?php do_action( "stw_replace_curly", $quote["desc"] ); ?>
                                             </h5>

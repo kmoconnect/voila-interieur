@@ -1,12 +1,12 @@
 .navbar {
   --bs-navbar-nav-link-padding-x: 1rem;
-  --bs-navbar-padding-y: 1.5rem;
+  --bs-navbar-padding-y: .5rem;
   --bs-navbar-hover-color: var(--stw-theme-secondary-color);
   --bs-navbar-active-color: var(--stw-theme-secondary-color);
   --bs-navbar-toggler-border-color: transparent;
   --bs-navbar-toggler-font-size: 1.45rem;
   --bs-navbar-toggler-focus-width: 0;
-  --bs-navbar-color: #fff;
+  --bs-navbar-color: var(--stw-theme-text-color);
 
   .dropdown-menu {
     --bs-dropdown-padding-y: .75rem;
@@ -20,7 +20,7 @@
   .nav {
     &-link {
       --bs-nav-link-font-size: 1.1rem;
-      
+
       position: relative;
       display: inline-block;
       align-items: center;
@@ -48,7 +48,7 @@
   }
 
   &-brand {
-    --width-logo: 10rem;
+    --width-logo: 6rem;
 
     svg,
     img {
@@ -60,8 +60,6 @@
 
   &--scroll {
     --bs-navbar-color: #000;
-    --bs-navbar-hover-color: var(--stw-theme-primary-color);
-    --bs-navbar-active-color: var(--stw-theme-primary-color);
 
     .navbar {
       &-brand {
@@ -73,4 +71,16 @@
     }
   }
 
+}
+
+.header {
+  &--fixed {
+    .navbar {
+      --bs-navbar-color: #fff;
+
+      &--scroll {
+        --bs-navbar-color: var(--stw-theme-text-color);
+      }
+    }
+  }
 }

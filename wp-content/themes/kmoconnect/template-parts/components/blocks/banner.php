@@ -26,7 +26,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
             <div class="banner__bg position-absolute top-0 start-0 w-100 h-100">
 				<?php echo wp_get_attachment_image( $block["img"], 'full', false,
 					[ "class" => "banner__img !h-100 object-fit-cover" ] ); ?>
-                <div class="banner__overlay position-absolute top-0 start-0 w-100 h-100 opacity-25 bg-black"
+                <div class="banner__overlay position-absolute top-0 start-0 w-100 h-100 opacity-50 bg-black"
                      aria-hidden="true"></div>
             </div>
             <div class="banner__inner position-relative">

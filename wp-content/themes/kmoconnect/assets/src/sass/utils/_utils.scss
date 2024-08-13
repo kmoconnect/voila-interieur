@@ -1,5 +1,6 @@
 @use 'sass:math';
 @use "../vendors/bootstrap";
+@use "../abstracts" as *;
 
 $step: 0.25rem;
 $max-width-values: ();
@@ -151,4 +152,23 @@ $step2: .5rem;
 
 .text-lead {
   font-size: 1.2rem;
+}
+
+.lt-space-1 {
+  letter-spacing: 1px;
+}
+
+.container-small {
+  max-width: toRem(1200);
+}
+
+.title-underline {
+  &::after {
+    content: "";
+    height: 2px;
+    background-color: var(--stw-theme-secondary-color);
+    width: 40px;
+    display: block;
+    margin-block: .5rem;
+  }
 }

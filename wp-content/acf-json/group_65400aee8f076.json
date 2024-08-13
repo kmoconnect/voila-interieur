@@ -43,6 +43,47 @@
             "append": ""
         },
         {
+            "key": "field_66bb681c7ff88",
+            "label": "Korte omschrijving",
+            "name": "service_short_desc",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Max. 2 - 3 zinnen - weergave bij overzicht",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "default_value": "",
+            "default_post_content": 0,
+            "default_post_excerpt": 1,
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_66bb68790409c",
+            "label": "Inhoud",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_65400b1957d9a",
             "label": "Omschrijving",
             "name": "service_desc",
@@ -128,5 +169,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1723463652
+    "modified": 1723558022
 }

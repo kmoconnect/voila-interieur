@@ -30,6 +30,8 @@ if ( get_row_layout() == "window_decoration_collection" ) {
 		$block["items"][] = [
 			"title" => get_the_title(),
 			"img"   => get_post_thumbnail_id(),
+			"class" => [ "primary-card--vertical" ],
+			"desc"  => get_the_excerpt(),
 			"link"  => [ "url" => get_permalink(), "title" => __( "Read more", "kmoconnect" ) ],
 		];
 	}

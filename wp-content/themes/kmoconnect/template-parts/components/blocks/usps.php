@@ -24,7 +24,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
 		$block["data"] ); ?>>
         <div class="<?php echo $block["container_class"]; ?>">
             <div class="usps__wrapper">
-                <div class="row row-cols-md-3">
+                <div class="row row-cols-md-3 g-15">
 					<?php foreach ( $block["items"] as $item ) : ?>
                         <div class="col">
                             <div class="usps__item d-flex gap-4">
@@ -32,9 +32,9 @@ $block["class"] = wp_parse_args( [], $block["class"] )
 									<?php echo $item["icon"]; ?>
                                 </div>
                                 <div class="usps__item-content">
-                                    <div class="usps__item-title">
+                                    <h5 class="usps__item-title fw-normal lt-space-1 mb-0">
 										<?php echo $item["title"]; ?>
-                                    </div>
+                                    </h5>
                                     <div class="usps__item-desc">
 										<?php echo $item["short_desc"]; ?>
                                     </div>
