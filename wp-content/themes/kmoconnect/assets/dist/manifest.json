@@ -11,25 +11,53 @@
     "file": "WooCommerce.woff2",
     "src": "assets/src/fonts/WooCommerce.woff2"
   },
-  "assets/src/fonts/open-sans-v36-latin-300.woff2": {
-    "file": "open-sans-v36-latin-300.woff2",
-    "src": "assets/src/fonts/open-sans-v36-latin-300.woff2"
+  "assets/src/fonts/dm-sans-v15-latin-100.woff2": {
+    "file": "dm-sans-v15-latin-100.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-100.woff2"
   },
-  "assets/src/fonts/open-sans-v36-latin-500.woff2": {
-    "file": "open-sans-v36-latin-500.woff2",
-    "src": "assets/src/fonts/open-sans-v36-latin-500.woff2"
+  "assets/src/fonts/dm-sans-v15-latin-200.woff2": {
+    "file": "dm-sans-v15-latin-200.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-200.woff2"
   },
-  "assets/src/fonts/open-sans-v36-latin-600.woff2": {
-    "file": "open-sans-v36-latin-600.woff2",
-    "src": "assets/src/fonts/open-sans-v36-latin-600.woff2"
+  "assets/src/fonts/dm-sans-v15-latin-300.woff2": {
+    "file": "dm-sans-v15-latin-300.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-300.woff2"
   },
-  "assets/src/fonts/open-sans-v36-latin-700.woff2": {
-    "file": "open-sans-v36-latin-700.woff2",
-    "src": "assets/src/fonts/open-sans-v36-latin-700.woff2"
+  "assets/src/fonts/dm-sans-v15-latin-300italic.woff2": {
+    "file": "dm-sans-v15-latin-300italic.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-300italic.woff2"
   },
-  "assets/src/fonts/open-sans-v36-latin-regular.woff2": {
-    "file": "open-sans-v36-latin-regular.woff2",
-    "src": "assets/src/fonts/open-sans-v36-latin-regular.woff2"
+  "assets/src/fonts/dm-sans-v15-latin-500.woff2": {
+    "file": "dm-sans-v15-latin-500.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-500.woff2"
+  },
+  "assets/src/fonts/dm-sans-v15-latin-500italic.woff2": {
+    "file": "dm-sans-v15-latin-500italic.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-500italic.woff2"
+  },
+  "assets/src/fonts/dm-sans-v15-latin-600.woff2": {
+    "file": "dm-sans-v15-latin-600.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-600.woff2"
+  },
+  "assets/src/fonts/dm-sans-v15-latin-700.woff2": {
+    "file": "dm-sans-v15-latin-700.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-700.woff2"
+  },
+  "assets/src/fonts/dm-sans-v15-latin-italic.woff2": {
+    "file": "dm-sans-v15-latin-italic.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-italic.woff2"
+  },
+  "assets/src/fonts/dm-sans-v15-latin-regular.woff2": {
+    "file": "dm-sans-v15-latin-regular.woff2",
+    "src": "assets/src/fonts/dm-sans-v15-latin-regular.woff2"
+  },
+  "assets/src/fonts/unna-v23-latin-700.woff2": {
+    "file": "unna-v23-latin-700.woff2",
+    "src": "assets/src/fonts/unna-v23-latin-700.woff2"
+  },
+  "assets/src/fonts/unna-v23-latin-regular.woff2": {
+    "file": "unna-v23-latin-regular.woff2",
+    "src": "assets/src/fonts/unna-v23-latin-regular.woff2"
   },
   "assets/src/js/main.css": {
     "file": "main.css",
@@ -41,11 +69,18 @@
       "fa-solid-900.ttf",
       "fa-brands-400.woff2",
       "fa-brands-400.ttf",
-      "open-sans-v36-latin-300.woff2",
-      "open-sans-v36-latin-regular.woff2",
-      "open-sans-v36-latin-500.woff2",
-      "open-sans-v36-latin-600.woff2",
-      "open-sans-v36-latin-700.woff2",
+      "dm-sans-v15-latin-100.woff2",
+      "dm-sans-v15-latin-200.woff2",
+      "dm-sans-v15-latin-300.woff2",
+      "dm-sans-v15-latin-300italic.woff2",
+      "dm-sans-v15-latin-regular.woff2",
+      "dm-sans-v15-latin-italic.woff2",
+      "dm-sans-v15-latin-500.woff2",
+      "dm-sans-v15-latin-500italic.woff2",
+      "dm-sans-v15-latin-600.woff2",
+      "dm-sans-v15-latin-700.woff2",
+      "unna-v23-latin-regular.woff2",
+      "unna-v23-latin-700.woff2",
       "WooCommerce.woff2",
       "WooCommerce.woff",
       "WooCommerce.ttf"
