@@ -1,0 +1,36 @@
+@use "../vendors/bootstrap" as *;
+@use "buttons" as *;
+
+.filter {
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  button {
+    @extend .btn;
+    @extend .btn-primary;
+    //background: transparent;
+    //border: 1px solid var(--stw-theme-gray-color);
+    //color: var(--stw-theme-secondary-color);
+
+    &:focus,
+    &:active,
+    &:hover {
+      background: var(--stw-theme-secondary-color);
+      border-color: var(--stw-theme-secondary-color);
+      color: white;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-basis: 100%;
+    }
+  }
+
+}

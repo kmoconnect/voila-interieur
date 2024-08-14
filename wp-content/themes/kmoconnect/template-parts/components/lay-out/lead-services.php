@@ -17,13 +17,13 @@ if ( isset( $args ) ) {
 
 $block["buttons"] = [
 	[
-		"url"   => get_the_permalink(),
+		"url"   => get_the_permalink( 13 ),
 		"title" => __( "Book your appointment", "kmoconnect" ),
 		"class" => [ "btn", "btn-primary" ]
 	]
 ];
 ?>
-<section class="lead-services py-10">
+<section class="lead-services pt-10 pb-layout">
     <div class="lead-services__back-link mb-6">
 		<?php get_template_part( "template-parts/components/lay-out/back-link" ); ?>
     </div>

@@ -22,16 +22,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
+  }
 
+  .offcanvas.showing,
+  .offcanvas.show {
     .navbar-nav {
       --bs-navbar-color: #fff;
       text-align: center;
     }
 
     .nav-link {
-      --bs-nav-link-font-size: var(--font-size-xxl);
+      --bs-nav-link-font-size: var(--font-size-xl);
     }
 
     .btn-close {

@@ -43,14 +43,7 @@ function render_project_single_template() {
 
 	echo '<div class="layout">';
 
-	\do_action( "stw_get_template", "template-parts/components/blocks/text-block", [
-		"description"   => get_field( "project_desc" ) ?? "",
-		"section_class" => [ "layout__block", "layout__block--project-desc" ],
-	] );
-
-	$main_image = get_field( "project_main_img" ) ?? [];
-	$images     = ( ! empty( get_field( "project_images" ) ) ) ? get_field( "project_images" ) : [];
-	$gallery    = array_merge( [ $main_image ], $images );
+	$gallery = ( ! empty( get_field( "project_img_gallery" ) ) ) ? get_field( "project_img_gallery" ) : [];
 
 	\do_action( "stw_get_template", "template-parts/components/blocks/photo-gallery", [
 		"images"        => $gallery,
@@ -62,4 +55,19 @@ function render_project_single_template() {
 
 }
 
-//\add_action( "stw_layout_blocks", __NAMESPACE__ . "\\render_project_single_template" );
+\add_action( "stw_layout_blocks", __NAMESPACE__ . "\\render_project_single_template", 8 );
+
+function reusable_block_projects() {
+	if ( ! is_singular( [ "projects", "services" ] ) ) {
+		return;
+	}
+
+	echo '<div class="layout">';
+
+	\do_action( "stw_get_template", "template-parts/lay-out/realisaties-in-de-kijker-402" );
+
+	echo '</div>';
+
+}
+
+\add_action( "stw_layout_blocks", __NAMESPACE__ . "\\reusable_block_projects", 40 );

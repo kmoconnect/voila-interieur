@@ -2835,6 +2835,20 @@
                 "operator": "==",
                 "value": "post"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projects"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
         ]
     ],
     "menu_order": 3,
@@ -2846,5 +2860,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1723468613
+    "modified": 1723619727
 }

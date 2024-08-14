@@ -99,6 +99,11 @@ function space_element_before_navbar() {
 \add_action( "stw_header_before", __NAMESPACE__ . "\\space_element_before_navbar" );
 
 function add_acf_page_settings_css_class( $classes ) {
+
+	if ( is_singular( "projects" ) ) {
+		$classes[] = "page-small-container";
+	}
+
 	// bail ACF not exists
 	if ( ! function_exists( "get_field" ) ) {
 		return $classes;

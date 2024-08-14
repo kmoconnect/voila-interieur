@@ -1,0 +1,16 @@
+@use "../vendors/bootstrap" as *;
+
+.post-type-archive-projects.archive {
+
+  .archive-projects {
+    &__item {
+      padding-bottom: 5rem;
+      width: 47%;
+
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+
+}

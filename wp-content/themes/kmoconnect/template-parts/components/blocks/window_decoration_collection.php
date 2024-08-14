@@ -39,7 +39,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
                     </div>
                 </div>
                 <div class="decoration-collection__items">
-                    <div class="row row-cols-3 g-8">
+                    <div class="row row-cols-3 g-10">
 						<?php foreach ( $block["items"] as $item ): ?>
                             <div class="col">
 								<?php do_action( "stw_get_template", "template-parts/components/cards/primary-card",

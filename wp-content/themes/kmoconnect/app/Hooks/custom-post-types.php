@@ -43,6 +43,35 @@ function register_custom_post_types() {
 			"supports"      => [ "thumbnail", "title" ],
 		]
 	);
+
+	// tax: categories - CPT projects
+	do_action(
+		"stw_register_tax",
+		"categories",
+		[
+			"cpt"      => "projects",
+			"plural"   => _x( ucfirst( "categories" ), "Post Type General Name", "kmoconnect" ),
+			"singular" => _x( ucfirst( "categories" ), "Post Type Singular Name", "kmoconnect" ),
+			"slug"     => class_exists( "\\SitePress" ) ? "projects" : _x(
+				"projects",
+				"post type slug",
+				"kmoconnect"
+			),
+
+		],
+		[
+			"hierarchical"      => true,
+			"public"            => true,
+			"show_ui"           => true,
+			"show_admin_column" => true,
+			"query_var"         => true,
+			"with_front"        => true,
+			"rewrite"           => [
+				"hierarchical" => true,
+				"slug"         => "projects"
+			]
+		]
+	);
 }
 
 \add_action( "init", __NAMESPACE__ . "\\register_custom_post_types" );
