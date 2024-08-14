@@ -116,6 +116,8 @@
       display: flex;
       column-gap: .5rem;
       flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
 
       .menu-item {
         a {

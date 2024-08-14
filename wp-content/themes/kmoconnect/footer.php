@@ -19,8 +19,8 @@ $columns = \Kmoconnect\Helpers\theme()->getWidgets( "footer" );
         <div class="footer__bottom">
             <div class="container">
                 <div class="footer__bottom-wrap">
-                    <div class="row justify-content-md-between">
-                        <div class="col-md-6 footer__bottom-col-1">
+                    <div class="row justify-content-center">
+                        <div class="col-12 footer__bottom-col-1 text-center">
 							<?php wp_nav_menu( [
 								'theme_location' => 'legal',
 								'menu_id'        => 'legal-menu',
@@ -29,17 +29,6 @@ $columns = \Kmoconnect\Helpers\theme()->getWidgets( "footer" );
 								'container'      => 'div',
 								'fallback_cb'    => '__return_false',
 							] ); ?>
-                        </div>
-                        <div class="col-md-6 text-md-end footer__bottom-col-2">
-                            <div class="copyright d-flex justify-content-end">
-                                <div class="d-flex gap-x-1">
-                                    <div class="copy-studiowebvision">
-                                        <a href="https://studiowebivison.be">Webdesign by Studio
-                                            Webvision</a>
-                                    </div>
-									<?php dynamic_sidebar( "copyright_footer_1" ); ?>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
