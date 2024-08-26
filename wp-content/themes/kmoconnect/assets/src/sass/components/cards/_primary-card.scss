@@ -82,7 +82,7 @@
               @extend %fa-icon;
               @extend .fas;
               content: fa-content($fa-var-long-arrow-right);
-              color: #fff;
+              color: var(--stw-theme-dark-color);
               position: absolute;
               left: 50%;
               top: 50%;

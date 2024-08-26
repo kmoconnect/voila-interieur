@@ -8,6 +8,8 @@
   --stw-theme-font-heading: 'Unna', serif;
   --stw-navbar-height: 13.625rem;
   --stw-theme-bg-body-color: #f9f7f6;
+  --stw-theme-dark-color: rgb(56 27 27);
+  --stw-theme-dashboard-edit-color: rgb(0 0 0 / 1);
   --webvision-bg-topbanner: var(--stw-theme-secondary-color);
 
   // bootstrap
@@ -53,14 +55,14 @@ body {
 }
 
 a {
-  color: var(--stw-theme-primary-color);
+  color: var(--stw-theme-secondary-color);
   text-decoration: none;
   font-weight: 500;
   transition: 250ms ease-in-out;
 
   &:hover,
   &:focus {
-    color: var(--stw-theme-secondary-color);
+    color: var(--stw-theme-dark-color);
   }
 }
 

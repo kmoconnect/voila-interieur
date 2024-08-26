@@ -58,7 +58,7 @@
     --bs-btn-disabled-border-color: var(--stw-theme-primary-color);
     --bs-btn-active-bg: var(--stw-theme-primary-color);
     --bs-btn-active-border-color: var(--stw-theme-primary-color);
-    --bs-btn-color: #fff;
+    --bs-btn-color: rgb(0 0 0 / 1);
 
     // hover
     --bs-btn-hover-color: #fff;
@@ -69,10 +69,10 @@
   &-secondary {
     --bs-btn-bg: var(--stw-theme-secondary-color);
     --bs-btn-border-color: var(--stw-theme-secondary-color);
-    --bs-btn-color: #fff;
+    --bs-btn-color: rgb(255 255 255 / 1);
 
     --bs-btn-hover-bg: rgb(var(--stw-theme-primary-color-rgb) / 1);
-    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-color: rgb(0 0 0 / 1);
 
     --bs-btn-active-bg: rgb(var(--stw-theme-primary-color-rgb) / 1);
   }

@@ -47,11 +47,3 @@
     }
   }
 }
-
-.admin-bar {
-  .navbar {
-    &__offcanvas {
-      margin-top: var(--wp-admin--admin-bar--height, 0px);
-    }
-  }
-}

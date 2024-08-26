@@ -3,7 +3,7 @@
 @use "../vendors/fontawesome" as *;
 @use "../vendors/bootstrap" as *;
 
-.recent-projects{
+.recent-projects {
   --swiper-navigation-size: 22px;
   --swiper-navigation-color: var(--stw-theme-primary-color);
   --swiper-theme-color: var(--stw-theme-primary-color);
@@ -11,7 +11,7 @@
   padding: 6rem 0;
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
     top: 30px;
     left: 50%;
@@ -23,13 +23,14 @@
     @include custom-container();
   }
 
-  &__wrapper{}
+  &__wrapper {
+  }
 
-  &__img-wrapper{
+  &__img-wrapper {
     position: relative;
   }
 
-  &__img-bg{
+  &__img-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,65 +42,65 @@
     justify-content: center;
     flex-direction: column;
     font-size: 2rem;
-    color: rgb(255 255 255 / 80%);
+    color: var(--stw-theme-dark-color);
     opacity: 0;
     transition: 350ms ease-in-out;
     @include fa-icon-solid($fa-var-search);
   }
 
-  &__img-wrapper:hover &__img-bg{
+  &__img-wrapper:hover &__img-bg {
     opacity: 1;
   }
 
-  &__item{
+  &__item {
     height: auto;
   }
 
-  &__img{
+  &__img {
     aspect-ratio: 4/3;
     width: 100%;
     object-fit: cover;
   }
 
-  &__row{
+  &__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
   }
 
-  &__arrows{
+  &__arrows {
     position: relative;
     display: flex;
     gap: 1.5rem;
 
     .swiper-button-next,
-    .swiper-button-prev{
+    .swiper-button-prev {
       position: static;
       display: block;
       margin: 0;
     }
   }
 
-  &__item{
+  &__item {
 
     transition: 0.5s ease;
 
-    &-content{
+    &-content {
       font-size: toRem(17);
       padding-top: toRem(40);
     }
 
-    &-title{
+    &-title {
 
     }
 
-    &-desc{
+    &-desc {
       font-weight: 400;
       color: var(--stw-theme-text-color);
     }
 
-    &-link{
+    &-link {
       font-weight: 500;
     }
 

@@ -3,7 +3,7 @@
 .footer {
   padding-top: 4rem;
   background-color: var(--stw-theme-primary-color);
-  color: #fff;
+  color: var(--stw-theme-dark-color);
 
   ul {
     margin: 0;
@@ -33,14 +33,14 @@
     h5,
     h6 {
       font-size: 1.25rem;
-      color: #fff;
+      color: var(--stw-theme-dark-color);
     }
 
     a {
       font-weight: 500;
       padding-bottom: 0.35rem;
       display: block;
-      color: #fff;
+      color: var(--stw-theme-dark-color);
 
       &:hover {
         color: var(--stw-theme-secondary-color);
@@ -99,7 +99,7 @@
 
     a {
       font-weight: 400;
-      color: rgb(255 255 255 / .6);
+      color: var(--stw-theme-dark-color);
 
       &:hover {
         color: rgb(255 255 255 / 1);
