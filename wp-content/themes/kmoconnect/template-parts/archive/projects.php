@@ -17,12 +17,13 @@ $terms = get_terms( [
         <div class="container">
             <div class="filter">
                 <div class="button-group filter__wrapper">
-                    <button data-filter="*">
+                    <button class="btn btn--filter" data-filter="*">
 						<?php _e( "All", "studiowebvision" ); ?>
                     </button>
 					<?php if ( ! is_wp_error( $terms ) ): ?>
 						<?php foreach ( $terms as $term ): ?>
-                            <button data-filter=".<?php echo $term->slug; ?>"><?php echo $term->name; ?></button>
+                            <button class="btn btn--filter"
+                                    data-filter=".<?php echo esc_attr( $term->slug ); ?>"><?php echo esc_html( $term->name ); ?></button>
 						<?php endforeach; ?>
 					<?php endif; ?>
                 </div>

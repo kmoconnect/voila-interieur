@@ -86,5 +86,17 @@
     --bs-btn-disabled-color: var(--stw-theme-primary-color);
     --bs-btn-disabled-border-color: var(--stw-theme-primary-color);
   }
+
+  &--filter.btn {
+    --bs-btn-color: #6b3f3f;
+
+    --bs-btn-border-color: var(--stw-theme-rose-color);
+    --bs-btn-bg: var(--stw-theme-rose-color);
+
+    --bs-btn-active-border-color: var(--stw-theme-secondary-color);
+    --bs-btn-active-bg: var(--stw-theme-secondary-color);
+    --bs-btn-hover-bg: var(--stw-theme-primary-color);
+
+  }
 }
 
