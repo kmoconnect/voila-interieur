@@ -41,6 +41,10 @@
   --stw-theme-dashboard-edit-color: var(--stw-theme-dark-color);
 }
 
+.stw-dashboard__wrapper .nav .nav-link {
+  color: var(--stw-theme-dark-color);
+}
+
 html,
 body {
   overflow-x: hidden;
