@@ -16,9 +16,6 @@
   button {
     @extend .btn;
     @extend .btn-primary;
-    //background: transparent;
-    //border: 1px solid var(--stw-theme-gray-color);
-    //color: var(--stw-theme-secondary-color);
 
     &:focus,
     &:active,

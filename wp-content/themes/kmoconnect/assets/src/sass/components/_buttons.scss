@@ -88,10 +88,10 @@
   }
 
   &--filter.btn {
-    --bs-btn-color: #6b3f3f;
+    //--bs-btn-color: #6b3f3f;
 
-    --bs-btn-border-color: var(--stw-theme-rose-color);
-    --bs-btn-bg: var(--stw-theme-rose-color);
+    --bs-btn-border-color: var(--stw-theme-green-color);
+    --bs-btn-bg: var(--stw-theme-green-color);
 
     --bs-btn-active-border-color: var(--stw-theme-secondary-color);
     --bs-btn-active-bg: var(--stw-theme-secondary-color);
