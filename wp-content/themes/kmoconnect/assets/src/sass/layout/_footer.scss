@@ -57,11 +57,14 @@
     align-items: center;
 
     .stw-email__address,
-    .stw-phone__mobile,
-    .stw-phone__phone,
     .stw-address,
     .stw-vat {
       display: block;
+    }
+
+    .stw-phone__mobile,
+    .stw-phone__phone {
+      display: inline-flex;
     }
 
     .widget.widget_nav_menu {
