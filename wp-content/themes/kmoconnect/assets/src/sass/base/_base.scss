@@ -11,7 +11,7 @@
   --stw-theme-green-color: rgb(169 201 192);
   --stw-theme-dark-color: rgb(56 27 27);
   --stw-theme-rose-color: #f4c9c9;
-  --stw-theme-dashboard-edit-color: var(--stw-theme-secondary-color);
+
   --webvision-bg-topbanner: var(--stw-theme-secondary-color);
 
   // bootstrap
@@ -35,6 +35,10 @@
 
   // swiper
   --swiper-theme-color: var(--stw-theme-primary-color);
+}
+
+.stw-dashboard-link {
+  --stw-theme-dashboard-edit-color: var(--stw-theme-dark-color);
 }
 
 html,
