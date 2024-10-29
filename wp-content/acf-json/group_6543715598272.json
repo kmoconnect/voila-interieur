@@ -66,6 +66,32 @@
             "delay": 0
         },
         {
+            "key": "field_66bc60bdc1497",
+            "label": "Categorie",
+            "name": "project_category",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_only": 0,
+            "taxonomy": "projecten",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 0,
+            "return_format": "object",
+            "field_type": "checkbox",
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        },
+        {
             "key": "field_6720d7a28f81b",
             "label": "Inhoud",
             "name": "",
@@ -104,32 +130,6 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_66bc60bdc1497",
-            "label": "Categorie",
-            "name": "project_category",
-            "aria-label": "",
-            "type": "taxonomy",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "admin_only": 0,
-            "taxonomy": "projecten",
-            "add_term": 1,
-            "save_terms": 1,
-            "load_terms": 0,
-            "return_format": "object",
-            "field_type": "radio",
-            "allow_null": 0,
-            "bidirectional": 0,
-            "multiple": 0,
-            "bidirectional_target": []
         },
         {
             "key": "field_654371559c5de",
@@ -224,5 +224,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730205610
+    "modified": 1730205852
 }

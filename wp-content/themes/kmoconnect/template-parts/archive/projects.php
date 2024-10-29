@@ -35,8 +35,11 @@ $terms = get_terms( [
 
 							$class_item = [ "archive-projects__item" ];
 							$cat        = get_field( "project_category" );
-							if ( $cat && is_a( $cat, "WP_Term" ) ) {
-								$class_item[] = $cat->slug;
+
+							if ( ! empty( $cat ) ) {
+								foreach ( $cat as $term ) {
+									$class_item[] = $term->slug;
+								}
 							}
 							?>
                             <div class="<?php echo implode( " ", $class_item ); ?>">
