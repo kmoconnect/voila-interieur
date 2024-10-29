@@ -105,4 +105,20 @@
     }
 
   }
+
+  .primary-card {
+    &--vertical {
+      .primary-card {
+        &__img-wrapper {
+          &::before {
+            background: var(--stw-theme-rose-color) !important;
+          }
+
+          &::after {
+            color: var(--stw-theme-secondary-color) !important;
+          }
+        }
+      }
+    }
+  }
 }

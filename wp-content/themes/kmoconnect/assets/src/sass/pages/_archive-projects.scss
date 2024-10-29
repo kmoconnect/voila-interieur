@@ -13,4 +13,22 @@
     }
   }
 
+  .layout__block {
+    .primary-card {
+      &--vertical {
+        .primary-card {
+          &__img-wrapper {
+            &::before {
+              background: var(--stw-theme-rose-color);
+            }
+
+            &::after {
+              color: var(--stw-theme-secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

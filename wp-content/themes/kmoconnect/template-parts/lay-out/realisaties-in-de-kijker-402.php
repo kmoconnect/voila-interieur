@@ -41,6 +41,7 @@ while ( $projects->have_posts() ) {
 		"img"   => get_post_thumbnail_id(),
 		"title" => get_the_title(),
 		"desc"  => get_the_excerpt(),
+		"link"  => [ "url" => get_the_permalink() ],
 		"class" => [ "primary-card--vertical" ],
 	];
 }
@@ -63,7 +64,7 @@ wp_reset_postdata();
                     </div>
 				<?php endif; ?>
             </div>
-            <div class="swiper" data-swiper='<?php echo json_encode( $block["swiper"] ); ?>'>
+            <div class="swiper group-cards" data-swiper='<?php echo json_encode( $block["swiper"] ); ?>'>
                 <div class="swiper-wrapper">
 					<?php foreach ( $block["projects"] as $project ): ?>
                         <div class="swiper-slide mb-10">
