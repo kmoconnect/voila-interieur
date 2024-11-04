@@ -4,11 +4,22 @@ $block = [
 	"description"     => "",
 	"id"              => "",
 	"img"             => "",
+	"images"          => [],
 	"buttons"         => [],
 	"section_class"   => [ "lead-section" ],
 	"class"           => [],
 	"container_class" => "container",
 	"data"            => [],
+	"swiper"          => [
+		"slidesPerView" => 1,
+		"loop"          => true,
+		"autoplay"      => [ "delay" => 3500, "pauseOnMouseEnter" => true ],
+		"speed"         => 1500,
+		"spaceBetween"  => 0,
+		"effect"        => "slide",
+		"navigation"    => [ "nextEl" => ".swiper-button-next", "prevEl" => ".swiper-button-prev" ],
+		"pagination"    => [ "el" => ".swiper-pagination", "type" => "bullets", "clickable" => true ]
+	]
 ];
 
 if ( isset( $args ) ) {
@@ -32,8 +43,25 @@ $block["buttons"] = [
             <div class="row gx-20">
                 <div class="col-md-5">
                     <div class="lead-services__img-wrapper pt-3">
-						<?php echo wp_get_attachment_image( $block["img"], "full", false,
-							[ "class" => "lead-services__img aspect-1x1 object-fit-cover w-100" ] ); ?>
+                        <div class="swiper" data-swiper='<?php echo json_encode( $block["swiper"] ); ?>'>
+                            <div class="swiper-wrapper">
+								<?php foreach ( $block["images"] as $image ):
+
+									$img = wp_get_attachment_image_src( $image, 'full' );
+
+									?>
+                                    <div class="swiper-slide cursor-pointer" data-lightbox="1">
+                                        <a class="block" data-pswp-src="<?php echo $img[0]; ?>"
+                                           data-pswp-width="<?php echo $img[1]; ?>"
+                                           data-pswp-height="<?php echo $img[2]; ?>">
+											<?php echo wp_get_attachment_image( $block["img"], "full", false,
+												[ "class" => "lead-services__img aspect-1x1 object-fit-cover w-100" ] ); ?>
+                                        </a>
+                                    </div>
+								<?php endforeach; ?>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
