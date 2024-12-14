@@ -61,5 +61,13 @@
         }
       }
     }
+
+    &-servies {
+      .swiper-button-prev,
+      .swiper-button-next {
+        padding: 1.25rem;
+        background: #d3d3d396;
+      }
+    }
   }
 }
