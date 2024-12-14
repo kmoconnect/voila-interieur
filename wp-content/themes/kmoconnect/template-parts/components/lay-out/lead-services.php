@@ -40,7 +40,7 @@ $block["buttons"] = [
     </div>
     <div class="container">
         <div class="lead-services__wrapper">
-            <div class="row gx-20">
+            <div class="row g-10 gx-lg-20">
                 <div class="col-md-5">
                     <div class="lead-services__img-wrapper pt-3">
                         <div class="swiper" data-swiper='<?php echo json_encode( $block["swiper"] ); ?>'>
