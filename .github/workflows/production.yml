@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-name: Deploy website to dev server
+name: Deploy website to production server
 jobs:
   build:
     runs-on: ubuntu-latest
