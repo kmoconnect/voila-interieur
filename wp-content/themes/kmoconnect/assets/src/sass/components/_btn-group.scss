@@ -1,3 +1,5 @@
+@use "../vendors/bootstrap";
+
 .btn-group {
   display: block;
 
@@ -13,5 +15,10 @@
 
   &--end &__wrapper {
     justify-content: flex-end;
+
+    @include bootstrap.media-breakpoint-down(md) {
+      justify-content: flex-start;
+      margin-top: 1rem;
+    }
   }
 }

@@ -26,7 +26,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
             <div class="usps__wrapper">
                 <div class="row row-cols-md-3 g-15">
 					<?php foreach ( $block["items"] as $item ) : ?>
-                        <div class="col">
+                        <div class="col-12">
                             <div class="usps__item d-flex gap-4">
                                 <div class="usps__item-icon bg-primary rounded-circle max-h-12 p-4 d-flex flex-column align-items-center">
 									<?php echo $item["icon"]; ?>

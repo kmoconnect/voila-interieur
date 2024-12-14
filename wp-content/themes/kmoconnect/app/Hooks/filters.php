@@ -144,13 +144,9 @@ function archive_data_attrs( $data, $post_type ) {
 
 function customize_lead( $block, $post_type ) {
 	if ( is_singular( "services" ) ) {
-		$block["name"] = "lead-services";
-		$images        = get_field( "service_gallery" ) ?? [];
-		if ( empty( $images ) ) {
-			$images = [ get_field( 'service_main_img' ) ];
-		}
-
-		$block["images"] = $images;
+		$block["name"]   = "lead-services";
+		$images          = get_field( "service_gallery" ) ?? [];
+		$block["images"] = wp_parse_args( $images ?? [], [ get_field( 'service_main_img' ) ] );
 	}
 
 	return $block;

@@ -70,7 +70,9 @@
     .widget.widget_nav_menu {
       .menu {
         display: flex;
-        gap: .75rem;
+        column-gap: .75rem;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   }

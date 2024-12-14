@@ -48,13 +48,12 @@ $block["buttons"] = [
 								<?php foreach ( $block["images"] as $image ):
 
 									$img = wp_get_attachment_image_src( $image, 'full' );
-
 									?>
                                     <div class="swiper-slide cursor-pointer" data-lightbox="1">
                                         <a class="block" data-pswp-src="<?php echo $img[0]; ?>"
                                            data-pswp-width="<?php echo $img[1]; ?>"
                                            data-pswp-height="<?php echo $img[2]; ?>">
-											<?php echo wp_get_attachment_image( $block["img"], "full", false,
+											<?php echo wp_get_attachment_image( $image, "full", false,
 												[ "class" => "lead-services__img aspect-1x1 object-fit-cover w-100" ] ); ?>
                                         </a>
                                     </div>

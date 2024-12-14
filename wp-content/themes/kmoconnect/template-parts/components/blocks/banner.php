@@ -31,7 +31,7 @@ $block["class"] = wp_parse_args( [], $block["class"] )
             </div>
             <div class="banner__inner position-relative">
                 <div class="<?php echo $block["container_class"]; ?>">
-                    <div class="banner__content max-w-200 mx-auto d-flex flex-column align-items-center">
+                    <div class="banner__content max-w-200 mx-auto d-flex flex-column align-items-center text-center">
                         <div class="banner__subtitle text-white text-uppercase mb-3">
 							<?php do_action( "stw_replace_curly", $block["subtitle"] ); ?>
                         </div>
