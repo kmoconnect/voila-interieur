@@ -13,8 +13,8 @@ $block = [
 	"swiper"          => [
 		"slidesPerView" => 1,
 		"loop"          => true,
-		"autoplay"      => [ "delay" => 3500, "pauseOnMouseEnter" => true ],
-		"speed"         => 1500,
+//		"autoplay"      => [ "delay" => 3250, "pauseOnMouseEnter" => false ],
+		"speed"         => 1000,
 		"spaceBetween"  => 0,
 		"effect"        => "slide",
 		"navigation"    => [ "nextEl" => ".swiper-button-next", "prevEl" => ".swiper-button-prev" ],
@@ -60,6 +60,8 @@ $block["buttons"] = [
 								<?php endforeach; ?>
                             </div>
                             <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
